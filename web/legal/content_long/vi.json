@@ -1,0 +1,168 @@
+{
+  "lang": "vi",
+  "dir": "ltr",
+  "brand_tagline": "Tỷ số và thống kê bóng đá trực tiếp",
+  "updated_label": "Cập nhật lần cuối",
+  "updated": "6 tháng 9 năm 2026",
+  "lang_picker_label": "Đọc bằng ngôn ngữ khác",
+  "docs": {
+    "privacy": {
+      "title": "Chính sách bảo mật",
+      "summary": "PulseScore không có tài khoản và không theo dõi người dùng. Chúng tôi không thu thập, lưu trữ hay bán thông tin cá nhân. Những gì bạn thiết lập trong ứng dụng chỉ nằm trên điện thoại của bạn.",
+      "sections": [
+        {
+          "h": "Phạm vi của chính sách này",
+          "p": [
+            "Chính sách này áp dụng cho ứng dụng PulseScore trên iOS và Android, cùng với các trang này. Chính sách không áp dụng cho những trang web khác mà ứng dụng liên kết tới, vì các trang đó có chính sách riêng."
+          ]
+        },
+        {
+          "h": "Thông tin chúng tôi thu thập",
+          "p": [
+            "Không có thông tin nào nhận dạng bạn. Không có tài khoản, không đăng ký, không địa chỉ email và không tên. Chúng tôi không dùng công cụ phân tích, mã nhận dạng quảng cáo hay SDK theo dõi của bên thứ ba, và ứng dụng không có quảng cáo."
+          ]
+        },
+        {
+          "h": "Những gì ứng dụng lưu trên máy bạn",
+          "p": [
+            "Để ứng dụng ghi nhớ thiết lập của bạn giữa các lần mở, ứng dụng lưu những mục sau trong bộ nhớ riêng của nó trên điện thoại:"
+          ],
+          "ul": [
+            "ngôn ngữ bạn đã chọn",
+            "bạn đã xem xong các màn hình giới thiệu hay chưa",
+            "giải đấu mặc định của bạn",
+            "các đội và trận bạn ghim",
+            "lựa chọn thông báo của bạn",
+            "trạng thái Premium"
+          ]
+        },
+        {
+          "h": "Những dữ liệu này không bao giờ rời khỏi điện thoại",
+          "p": [
+            "Không mục nào trong số đó được gửi lên cho chúng tôi hay bất kỳ ai khác, và tất cả sẽ bị xóa khi bạn gỡ cài đặt ứng dụng."
+          ]
+        },
+        {
+          "h": "Những gì thực sự rời khỏi thiết bị",
+          "p": [
+            "Để hiển thị tỷ số trực tiếp, ứng dụng yêu cầu dữ liệu bóng đá từ dịch vụ tỷ số của chúng tôi và logo câu lạc bộ từ máy chủ hình ảnh của nhà cung cấp dữ liệu. Những yêu cầu đó chỉ mang theo những gì mà bất kỳ yêu cầu web thông thường nào cũng mang: địa chỉ IP, thời điểm truy cập, cùng loại thiết bị và hệ điều hành nói chung.",
+            "Thông tin đó được dùng để trả về kết quả và giữ cho dịch vụ hoạt động ổn định, an toàn. Chúng tôi không gắn mã nhận dạng nào vào đó, không dùng nó để dựng hồ sơ về bạn và không kết hợp nó với bất kỳ dữ liệu nào khác."
+          ]
+        },
+        {
+          "h": "Thông báo",
+          "p": [
+            "Lựa chọn bật hoặc tắt thông báo được lưu trên thiết bị của bạn. Thông báo đẩy chưa được bật trong phiên bản hiện tại. Nếu sau này có, mã thiết bị sẽ chỉ được dùng để gửi những cảnh báo trận đấu mà bạn yêu cầu, và bạn có thể tắt bất cứ lúc nào trong cài đặt điện thoại."
+          ]
+        },
+        {
+          "h": "Các dịch vụ chúng tôi sử dụng",
+          "p": [
+            "Ứng dụng và các trang này dựa vào một số ít bên thứ ba:"
+          ],
+          "ul": [
+            "API-Football (api-sports.io) — dữ liệu trận đấu, bảng xếp hạng và logo câu lạc bộ",
+            "Railway — nơi lưu trữ dịch vụ tỷ số mà ứng dụng kết nối tới",
+            "Vercel — nơi lưu trữ các trang này",
+            "BBC Sport — liên kết tin tức, mở trong trình duyệt của bạn"
+          ]
+        },
+        {
+          "h": "Chúng tôi không chia sẻ gì với họ",
+          "p": [
+            "Chúng tôi không chia sẻ thông tin cá nhân với bất kỳ nhà cung cấp nào, bởi vì chúng tôi không có thông tin nào cả. Khi bạn mở liên kết tin tức, bạn rời khỏi ứng dụng và chính sách bảo mật của trang đó sẽ được áp dụng."
+          ]
+        },
+        {
+          "h": "Trẻ em",
+          "p": [
+            "PulseScore không hướng đến trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin về các em. Vì ứng dụng không thu thập thông tin cá nhân của bất kỳ ai, nên chúng tôi cũng không nắm giữ gì về một đứa trẻ."
+          ]
+        },
+        {
+          "h": "Quyền kiểm soát dữ liệu của bạn",
+          "p": [
+            "Vì không có gì gắn với danh tính của bạn, nên không có tài khoản nào để đóng và không có dữ liệu cá nhân nào để yêu cầu, chỉnh sửa hay xuất ra — đơn giản là chúng tôi không có.",
+            "Bạn có thể đổi ngôn ngữ, giải đấu mặc định và các đội đã ghim bất cứ lúc nào trong phần Cài đặt, và việc xóa ứng dụng sẽ xóa mọi thứ mà ứng dụng đã lưu trên thiết bị."
+          ]
+        },
+        {
+          "h": "Thay đổi và liên hệ",
+          "p": [
+            "Nếu chính sách này thay đổi, chúng tôi sẽ cập nhật ngày hiển thị ở đầu trang. Nếu bạn có thắc mắc, hãy gửi thư tới {{EMAIL}}."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Điều khoản dịch vụ",
+      "summary": "PulseScore là ứng dụng tỷ số bóng đá miễn phí, chỉ nhằm mục đích cung cấp thông tin. Dữ liệu đến từ nhà cung cấp bên thứ ba và có thể bị chậm hoặc sai — đừng bao giờ dựa vào đó để cá cược hay ra quyết định khác.",
+      "sections": [
+        {
+          "h": "Chấp nhận điều khoản",
+          "p": [
+            "Khi tải xuống hoặc sử dụng PulseScore, bạn đồng ý với các điều khoản này. Nếu bạn không đồng ý, vui lòng không sử dụng ứng dụng."
+          ]
+        },
+        {
+          "h": "PulseScore là gì",
+          "p": [
+            "PulseScore là ứng dụng di động hiển thị lịch thi đấu, tỷ số trực tiếp, diễn biến trận đấu và bảng xếp hạng bóng đá, nhằm mục đích thông tin và giải trí. Ứng dụng miễn phí và không cần tài khoản."
+          ]
+        },
+        {
+          "h": "Độ chính xác của thông tin",
+          "p": [
+            "Tỷ số, giờ bóng lăn, bảng xếp hạng và diễn biến trận đấu đến từ một nhà cung cấp dữ liệu bên thứ ba. Chúng có thể bị chậm, thiếu, gián đoạn hoặc đơn giản là sai, và các trận đấu có thể bị hoãn hoặc dời lịch mà không báo trước.",
+            "Mọi nội dung trong ứng dụng chỉ mang tính thông tin chung. Đừng dựa vào đó để cá cược, ra quyết định tài chính hay bất kỳ quyết định nào khác — hãy luôn kiểm tra nguồn chính thức. Chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại nào phát sinh từ việc tin vào dữ liệu hiển thị."
+          ]
+        },
+        {
+          "h": "Cách bạn có thể sử dụng ứng dụng",
+          "p": [
+            "Hãy sử dụng PulseScore một cách hợp pháp và hợp lý. Cụ thể, bạn không được:"
+          ],
+          "ul": [
+            "dịch ngược, phân tách hoặc chỉnh sửa ứng dụng",
+            "thu thập hàng loạt, sao chép hoặc bán lại dữ liệu mà ứng dụng hiển thị",
+            "cố gắng làm gián đoạn, gây quá tải hoặc truy cập trái phép vào dịch vụ",
+            "dùng ứng dụng cho bất kỳ mục đích bất hợp pháp nào"
+          ]
+        },
+        {
+          "h": "Premium",
+          "p": [
+            "Ứng dụng có gói Premium tùy chọn. Phiên bản hiện tại không bán bất kỳ gói thuê bao trả phí nào, và các tính năng Premium được mở khóa miễn phí trong ứng dụng.",
+            "Nếu sau này có các gói trả phí, việc mua, gia hạn và hoàn tiền sẽ do Apple App Store hoặc Google Play xử lý theo điều khoản riêng của họ, và giá cùng chu kỳ thanh toán sẽ được hiển thị cho bạn trước khi mua."
+          ]
+        },
+        {
+          "h": "Sở hữu trí tuệ",
+          "p": [
+            "Bản thân ứng dụng — thiết kế, mã nguồn và thương hiệu — thuộc về chúng tôi. Logo câu lạc bộ, logo giải đấu, tên giải và tên đội bóng thuộc về các chủ sở hữu tương ứng và chỉ được hiển thị để nhận diện các giải đấu và câu lạc bộ trong ứng dụng. Chúng tôi không tuyên bố quyền sở hữu với chúng và không liên kết, không được chứng thực hay tài trợ bởi bất kỳ câu lạc bộ, giải đấu hay tổ chức quản lý nào."
+          ]
+        },
+        {
+          "h": "Liên kết tới trang khác",
+          "p": [
+            "Ứng dụng có liên kết tới nội dung của bên thứ ba, chẳng hạn tin tức bóng đá. Chúng tôi không kiểm soát những trang đó và không chịu trách nhiệm về nội dung, độ chính xác hay cách xử lý quyền riêng tư của họ."
+          ]
+        },
+        {
+          "h": "Không bảo đảm và giới hạn trách nhiệm",
+          "p": [
+            "PulseScore được cung cấp \"nguyên trạng\" và \"tùy theo khả năng sẵn có\", không kèm bảo đảm dưới bất kỳ hình thức nào. Chúng tôi không hứa hẹn ứng dụng sẽ hoạt động liên tục, không lỗi, hay dữ liệu sẽ chính xác và đầy đủ.",
+            "Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm về thiệt hại gián tiếp, ngẫu nhiên hoặc hệ quả, về lợi nhuận hay cơ hội bị mất, cũng như về bất kỳ thiệt hại nào phát sinh từ việc gián đoạn dịch vụ hoặc dữ liệu thiếu chính xác."
+          ]
+        },
+        {
+          "h": "Thay đổi và chấm dứt dịch vụ",
+          "p": [
+            "Chúng tôi có thể cập nhật ứng dụng và các điều khoản này theo thời gian; việc tiếp tục sử dụng ứng dụng sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận điều khoản mới. Chúng tôi cũng có thể tạm dừng hoặc ngừng cung cấp dịch vụ, hoặc bất kỳ phần nào của dịch vụ, vào bất kỳ lúc nào.",
+            "Các điều khoản này được điều chỉnh bởi pháp luật áp dụng tại quốc gia nơi nhà phát triển đặt trụ sở, không xét đến các quy tắc xung đột pháp luật. Mọi thắc mắc về điều khoản có thể gửi tới {{EMAIL}}."
+          ]
+        }
+      ]
+    }
+  }
+}

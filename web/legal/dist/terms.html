@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PulseScore — Terms of Service</title>
+<link rel="canonical" href="/en/terms.html">
+<meta http-equiv="refresh" content="0;url=/en/terms.html">
+<link rel="stylesheet" href="/style.css"></head>
+<body><div class="wrap"><p>Redirecting to the Terms of Service…
+<a href="/en/terms.html">Continue</a></p></div>
+<script>
+// Prefer the reader's own language when we publish it; fall back to English.
+var known = ["vi", "hi", "en", "pt", "es", "fr", "id", "ko", "ja", "zh", "th", "tr", "de", "ar"];
+var want = (navigator.language || 'en').slice(0, 2).toLowerCase();
+var q = new URLSearchParams(location.search).get('lang');
+if (q) want = q.slice(0, 2).toLowerCase();
+location.replace('/' + (known.indexOf(want) >= 0 ? want : 'en') + '/terms.html');
+</script></body></html>

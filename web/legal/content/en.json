@@ -1,0 +1,111 @@
+{
+ "lang": "en",
+ "dir": "ltr",
+ "brand_tagline": "Live Football Scores & Stats",
+ "updated_label": "Last updated",
+ "updated": "6 September 2026",
+ "lang_picker_label": "Read this in another language",
+ "docs": {
+  "privacy": {
+   "title": "Privacy Policy",
+   "summary": "PulseScore has no accounts and no tracking. We do not collect, store or sell personal information.",
+   "sections": [
+    {
+     "h": "What we collect",
+     "p": [
+      "Nothing that identifies you. There is no account, no sign-up, no email address and no name. We use no analytics, no advertising identifiers and no third-party tracking, and the app has no ads."
+     ]
+    },
+    {
+     "h": "What stays on your device",
+     "p": [
+      "The app saves your setup in its own private storage on your phone:"
+     ],
+     "ul": [
+      "chosen language",
+      "whether the intro is finished",
+      "default league",
+      "pinned teams and matches",
+      "notification preference",
+      "whether Premium is active"
+     ],
+     "p2": [
+      "None of it is uploaded anywhere, and it is deleted when you uninstall the app."
+     ]
+    },
+    {
+     "h": "What leaves your device",
+     "p": [
+      "To show scores, the app requests match data from our score service and club badges from the data provider's image server. Those requests carry only what any web request carries — an IP address, a timestamp and the general device type — used to return the response and keep the service secure. We attach no identifier and build no profile."
+     ]
+    },
+    {
+     "h": "Notifications",
+     "p": [
+      "Your on/off choice is stored on your device. Push notifications are not enabled in this release. If added, a device token would be used only to deliver the match alerts you asked for, and you can turn them off in your phone's settings."
+     ]
+    },
+    {
+     "h": "Services we use",
+     "p": [
+      "API-Football for match data and badges, Railway for the score service, Vercel for these pages, and BBC Sport for the news link, which opens in your browser under its own policy. We share no personal information with them, because we hold none."
+     ]
+    },
+    {
+     "h": "Children, control and contact",
+     "p": [
+      "PulseScore is not directed at children under 13 and knowingly collects nothing from them. As nothing is tied to your identity, there is no account to close and no data to request or export. Deleting the app removes everything it stored. If this policy changes we will update the date above. Questions: {{EMAIL}}."
+     ]
+    }
+   ]
+  },
+  "terms": {
+   "title": "Terms of Service",
+   "summary": "PulseScore is a free football scores app provided for information only. Data may be delayed or wrong — never rely on it for betting or other decisions.",
+   "sections": [
+    {
+     "h": "Using the app",
+     "p": [
+      "By downloading or using PulseScore you accept these terms; if you do not, please do not use the app. It shows fixtures, live scores, match events and league tables for information and entertainment, is free, and needs no account."
+     ]
+    },
+    {
+     "h": "Accuracy",
+     "p": [
+      "Scores, kick-off times, tables and events come from a third-party data provider and may be delayed, incomplete or wrong; matches can be postponed without notice. Everything is general information only — do not rely on it for betting, financial or other decisions, and always check an official source. We are not liable for any loss from relying on it."
+     ]
+    },
+    {
+     "h": "What you may not do",
+     "p": [
+      "Please use the app lawfully. Do not:"
+     ],
+     "ul": [
+      "reverse engineer, decompile or modify it",
+      "scrape, bulk-extract or resell the data",
+      "disrupt, overload or gain unauthorised access to the service",
+      "use it for anything unlawful"
+     ]
+    },
+    {
+     "h": "Premium",
+     "p": [
+      "The app has an optional Premium tier. No paid subscription is sold in this release and Premium is unlocked free. If paid plans are added, the App Store or Google Play will handle purchases and refunds under their terms, and the price will be shown before you buy."
+     ]
+    },
+    {
+     "h": "Ownership and other sites",
+     "p": [
+      "The app, its design and code are ours. Club badges, league logos and competition and team names belong to their owners and are shown only to identify them; we claim no ownership and are not affiliated with or endorsed by any club, league or governing body. Links to third-party content such as news are outside our control."
+     ]
+    },
+    {
+     "h": "No warranty, changes and contact",
+     "p": [
+      "The app is provided \"as is\" and \"as available\", without warranty. To the fullest extent the law allows we are not liable for indirect or consequential loss, or for interruptions and inaccuracies in the data. We may update the app and these terms; continued use means acceptance, and we may suspend or discontinue the service. These terms follow the law of the country where the developer is established. Questions: {{EMAIL}}."
+     ]
+    }
+   ]
+  }
+ }
+}

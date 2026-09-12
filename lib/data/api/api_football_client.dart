@@ -19,6 +19,12 @@ class ApiException implements Exception {
   /// bug — the UI phrases these differently.
   bool get isRateLimit => statusCode == 429;
 
+  /// True when we never got an answer at all, as opposed to the server
+  /// answering with a problem. The two deserve different wording.
+  bool get isOffline =>
+      statusCode == null &&
+      (message.contains('Network unavailable') || message.contains('timed out'));
+
   @override
   String toString() => 'ApiException($statusCode): $message';
 }

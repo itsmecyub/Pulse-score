@@ -1,0 +1,26 @@
+{
+  "ads": {
+    "admob": {
+      "openAdsIds": "ca-app-pub-3940256099942544/9257395921",
+      "bannerIds": ["ca-app-pub-3940256099942544/9214589741"],
+      "interIds": ["ca-app-pub-3940256099942544/1033173712"],
+      "nativeIds": ["ca-app-pub-3940256099942544/2247696110"],
+      "rewardIds": ["ca-app-pub-6503755592272111/5763890191"]
+    },
+    "applovin": {
+        "sdk_key": "",
+        "bannerId": "",
+        "openAdsIds":"60bcaa3bee8f034b",
+        "interId": "40a9b25969e5e629",
+        "nativeId": "43e21bcddec13181",
+        "rewardId": "42fda58804fc7b6c"
+    },
+    "settings": {
+      "openads": "",
+      "banners": "",
+      "inters": "",
+      "nativees": "",
+      "rewards": ""
+    }
+  }
+}

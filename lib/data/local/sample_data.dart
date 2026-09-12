@@ -25,15 +25,6 @@ class SampleData {
     round: 'Regular Season - 4',
   );
 
-  static final _vLeague = League(
-    id: 340,
-    name: 'V.League 1',
-    country: 'Vietnam',
-    countryCode: 'VN',
-    logo: '$_leagueLogo/340.png',
-    round: 'Regular Season - 24',
-  );
-
   static final _primeraB = League(
     id: 132,
     name: 'Primera B Metropolitana',
@@ -170,34 +161,31 @@ class SampleData {
     ];
   }
 
-  /// Completed V-League results, matching the Schedule tab.
-  static List<Fixture> vLeagueResults() {
+  /// Completed results for the default league, so the Schedule tab has content
+  /// when the backend is unreachable.
+  static List<Fixture> recentResults() {
     final now = DateTime.now();
-    Fixture done(int id, int daysAgo, String h, String a, int hg, int ag,
-        int hid, int aid) {
+    Fixture done(int id, int hoursAgo, String h, int hid, String a, int aid,
+        int hg, int ag) {
       return Fixture(
         id: id,
-        kickoff: now.subtract(Duration(days: daysAgo)),
+        kickoff: now.subtract(Duration(hours: hoursAgo)),
         status: _finished,
-        league: _vLeague,
-        home: _team(hid, h),
-        away: _team(aid, a),
+        league: _premierLeague,
+        home: _team(hid, h, crest: true),
+        away: _team(aid, a, crest: true),
         homeGoals: hg,
         awayGoals: ag,
       );
     }
 
     return [
-      done(900201, 105, 'Thanh Hóa', 'Hoang Anh Gia Lai', 1, 1, 3266, 3255),
-      done(900202, 105, 'Da Nang', 'Hai Phong', 2, 0, 3254, 3256),
-      done(900203, 104, 'Binh Duong', 'Song Lam Nghe An', 0, 1, 3253, 3264),
-      done(900204, 104, 'Hồng Lĩnh Hà Tĩnh', 'Công An Nhân Dân', 1, 1, 3258, 3268),
-      done(900205, 104, 'Ha Noi', 'Nam Dinh', 2, 1, 3257, 3262),
-      done(900206, 97, 'Hồng Lĩnh Hà Tĩnh', 'Da Nang', 0, 0, 3258, 3254),
-      done(900207, 97, 'Nam Dinh', 'Binh Duong', 3, 0, 3262, 3253),
-      done(900208, 96, 'Hai Phong', 'Thanh Hóa', 1, 2, 3256, 3266),
-      done(900209, 90, 'Hoang Anh Gia Lai', 'Ha Noi', 0, 2, 3255, 3257),
-      done(900210, 89, 'Song Lam Nghe An', 'Hồng Lĩnh Hà Tĩnh', 1, 0, 3264, 3258),
+      done(900201, 4, 'Arsenal', 42, 'Tottenham', 47, 2, 1),
+      done(900202, 6, 'Liverpool', 40, 'Chelsea', 49, 3, 1),
+      done(900203, 7, 'Manchester City', 50, 'Newcastle', 34, 2, 2),
+      done(900204, 26, 'Aston Villa', 66, 'Brighton', 51, 1, 0),
+      done(900205, 28, 'West Ham', 48, 'Everton', 45, 0, 2),
+      done(900206, 30, 'Bournemouth', 35, 'Manchester United', 33, 1, 1),
     ];
   }
 
@@ -205,7 +193,7 @@ class SampleData {
   static List<Fixture> all() => [
         ...featuredUpcoming(),
         ...live(),
-        ...vLeagueResults(),
+        ...recentResults(),
       ];
 
   static List<Fixture> forLeague(int leagueId) {
@@ -278,24 +266,28 @@ class SampleData {
   }
 
   static List<Standing> standingsFor(int leagueId) {
-    if (leagueId != 340) return const [];
+    if (leagueId != 39) return const [];
     const rows = [
-      ['Nam Dinh', 3262, 24, 15, 5, 4, 48, 26, 50],
-      ['Ha Noi', 3257, 24, 13, 6, 5, 44, 28, 45],
-      ['Thanh Hóa', 3266, 24, 12, 6, 6, 38, 27, 42],
-      ['Binh Duong', 3253, 24, 11, 7, 6, 35, 29, 40],
-      ['Hai Phong', 3256, 24, 10, 7, 7, 31, 28, 37],
-      ['Da Nang', 3254, 24, 9, 8, 7, 30, 27, 35],
-      ['Song Lam Nghe An', 3264, 24, 8, 7, 9, 26, 30, 31],
-      ['Hồng Lĩnh Hà Tĩnh', 3258, 24, 7, 8, 9, 25, 31, 29],
-      ['Công An Nhân Dân', 3268, 24, 6, 6, 12, 22, 36, 24],
-      ['Hoang Anh Gia Lai', 3255, 24, 4, 6, 14, 19, 41, 18],
+      ['Arsenal', 42, 38, 26, 7, 5, 69, 25, 85],
+      ['Manchester City', 50, 38, 23, 9, 6, 72, 30, 78],
+      ['Manchester United', 33, 38, 20, 11, 7, 57, 38, 71],
+      ['Aston Villa', 66, 38, 19, 8, 11, 58, 51, 65],
+      ['Liverpool', 40, 38, 17, 9, 12, 55, 45, 60],
+      ['Bournemouth', 35, 38, 13, 18, 7, 46, 42, 57],
+      ['Chelsea', 49, 38, 15, 10, 13, 52, 48, 55],
+      ['Newcastle', 34, 38, 14, 10, 14, 50, 49, 52],
+      ['Tottenham', 47, 38, 13, 9, 16, 48, 52, 48],
+      ['Brighton', 51, 38, 11, 12, 15, 44, 51, 45],
     ];
     return [
       for (var i = 0; i < rows.length; i++)
         Standing(
           rank: i + 1,
-          team: Team(id: rows[i][1] as int, name: rows[i][0] as String),
+          team: Team(
+            id: rows[i][1] as int,
+            name: rows[i][0] as String,
+            logo: '$_crest/${rows[i][1]}.png',
+          ),
           played: rows[i][2] as int,
           won: rows[i][3] as int,
           drawn: rows[i][4] as int,

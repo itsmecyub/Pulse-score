@@ -32,6 +32,7 @@ class _ScheduleScreenState extends State<ScheduleScreen>
   List<Fixture> _fixtures = const [];
   bool _loading = true;
   String? _notice;
+  bool _serviceEmpty = false;
 
   @override
   bool get wantKeepAlive => true;
@@ -44,20 +45,22 @@ class _ScheduleScreenState extends State<ScheduleScreen>
     });
   }
 
-  Future<void> _select(int leagueId) async {
+  Future<void> _select(int leagueId, {bool force = false}) async {
     setState(() {
       _leagueId = leagueId;
       _loading = true;
     });
 
     final result =
-        await context.read<FootballRepository>().fixturesForLeague(leagueId);
+        await context.read<FootballRepository>().fixturesForLeague(leagueId, force: force);
     if (!mounted || _leagueId != leagueId) return;
 
     setState(() {
       _fixtures = List.of(result.data)
         ..sort((a, b) => b.kickoff.compareTo(a.kickoff));
       _notice = result.notice;
+      _serviceEmpty =
+          context.read<FootballRepository>().backendHasNoData;
       _loading = false;
     });
   }
@@ -119,8 +122,15 @@ class _ScheduleScreenState extends State<ScheduleScreen>
                 ? const Center(child: CircularProgressIndicator())
                 : _fixtures.isEmpty
                     ? EmptyMessage(
-                        icon: Icons.event_busy_rounded,
-                        title: s('no_fixtures'),
+                        icon: _serviceEmpty
+                            ? Icons.cloud_off_rounded
+                            : Icons.event_busy_rounded,
+                        // "No fixtures for this league" is wrong when the
+                        // backend is serving nothing at all — the league may
+                        // well be playing; we just have no data for anyone.
+                        title: _serviceEmpty
+                            ? s('service_no_data')
+                            : s('no_fixtures'),
                         body: selected == null
                             ? ''
                             : '${selected.name} · ${selected.code}',

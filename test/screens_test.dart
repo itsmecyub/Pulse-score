@@ -3,14 +3,16 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:pulse_score/core/theme/app_theme.dart';
 import 'package:pulse_score/data/local/preferences.dart';
-import 'package:pulse_score/data/local/sample_data.dart';
 import 'package:pulse_score/data/repositories/football_repository.dart';
+import 'package:pulse_score/ads/ads_boot.dart';
 import 'package:pulse_score/features/match/match_detail_screen.dart';
 import 'package:pulse_score/features/premium/paywall_screen.dart';
 import 'package:pulse_score/features/shell/home_shell.dart';
 import 'package:pulse_score/state/app_state.dart';
 import 'package:pulse_score/state/matches_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'support/mock_backend.dart';
 
 /// Screen-level smoke tests.
 ///
@@ -26,11 +28,12 @@ Future<Widget> _app({Map<String, Object> prefs = const {}}) async {
     ...prefs,
   });
   final preferences = await Preferences.load();
+  seedAds();
 
   return MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => AppState(preferences)),
-      Provider<FootballRepository>(create: (_) => FootballRepository()),
+      Provider<FootballRepository>(create: (_) => mockRepository()),
       ChangeNotifierProxyProvider<FootballRepository, MatchesState>(
         create: (context) => MatchesState(context.read<FootballRepository>()),
         update: (_, repo, previous) => previous ?? MatchesState(repo),
@@ -61,9 +64,9 @@ void main() {
     await tester.pumpWidget(await _app());
     await settle(tester);
 
-    // Live tab landed with demo fixtures.
-    expect(find.text('LIVE NOW  ·  6'), findsOneWidget);
-    expect(find.text('Everton'), findsWidgets);
+    // Live tab landed with the recorded fixtures.
+    expect(find.text('LIVE NOW  ·  3'), findsOneWidget);
+    expect(find.text('IF Brommapojkarna'), findsWidgets);
 
     for (final tab in ['Schedule', 'Explore', 'Pinned', 'Settings']) {
       await tester.tap(find.text(tab));
@@ -72,7 +75,7 @@ void main() {
     }
   });
 
-  testWidgets('Explore lists both league sections', (tester) async {
+  testWidgets('Explore lists the big leagues, all unlocked', (tester) async {
     await tester.binding.setSurfaceSize(surface);
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
@@ -82,8 +85,29 @@ void main() {
     await settle(tester);
 
     expect(find.text('TOP LEAGUES'), findsOneWidget);
-    expect(find.text('MORE LEAGUES'), findsOneWidget);
-    expect(find.text('Premier League'), findsOneWidget);
+    for (final league in [
+      'Premier League',
+      'La Liga',
+      'Serie A',
+      'Bundesliga',
+      'Ligue 1',
+      'Champions League',
+    ]) {
+      expect(find.text(league), findsOneWidget, reason: '$league missing');
+    }
+
+    // Nothing secondary is promoted any more.
+    expect(find.text('MORE LEAGUES'), findsNothing);
+    expect(find.text('V-League'), findsNothing);
+
+    // Every league card ends in a chevron; a gated one would show a padlock
+    // instead. Six leagues, six chevrons, so none is locked.
+    expect(find.byIcon(Icons.chevron_right_rounded), findsNWidgets(6));
+    expect(
+      find.byIcon(Icons.lock_rounded),
+      findsOneWidget,
+      reason: 'the only padlock left belongs to the premium news feed',
+    );
   });
 
   testWidgets('Pinned shows the empty state until something is pinned',
@@ -111,7 +135,7 @@ void main() {
     await settle(tester);
 
     expect(find.text('Upgrade to Premium'), findsOneWidget);
-    expect(find.text('V-League'), findsOneWidget);
+    expect(find.text('Premier League'), findsOneWidget);
     expect(find.text('v1.1.6'), findsOneWidget);
   });
 
@@ -122,15 +146,17 @@ void main() {
 
     SharedPreferences.setMockInitialValues({});
     final preferences = await Preferences.load();
-    // Boca vs River — the demo fixture that carries a goal, a card and a penalty.
-    final fixture = SampleData.live().firstWhere((f) => f.id == 900005);
+    final repo = mockRepository();
+    seedAds();
+    // A real in-play match from the recorded live payload; it carries events.
+    final fixture = (await repo.liveFixtures()).data.first;
 
     await tester.pumpWidget(
       MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => AppState(preferences)),
-          Provider<FootballRepository>(create: (_) => FootballRepository()),
-        ],
+          Provider<FootballRepository>(create: (_) => repo),
+            ],
         child: MaterialApp(
           theme: AppTheme.build(),
           home: MatchDetailScreen(fixture: fixture),
@@ -139,9 +165,9 @@ void main() {
     );
     await settle(tester);
 
-    expect(find.text('1 - 1'), findsOneWidget);
-    expect(find.text('E. Cavani'), findsOneWidget);
+    expect(find.text('IF Brommapojkarna'), findsWidgets);
     expect(find.text('EVENTS'), findsOneWidget);
+    expect(find.text('Anton Kurochkin'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

@@ -1,0 +1,168 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "brand_tagline": "Scores et statistiques de football en direct",
+  "updated_label": "Dernière mise à jour",
+  "updated": "6 septembre 2026",
+  "lang_picker_label": "Lire dans une autre langue",
+  "docs": {
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "summary": "PulseScore n'a ni compte ni suivi. Nous ne collectons, ne stockons et ne vendons aucune donnée personnelle. Ce que vous réglez dans l'application reste sur votre téléphone.",
+      "sections": [
+        {
+          "h": "Ce que couvre cette politique",
+          "p": [
+            "Cette politique s'applique à l'application mobile PulseScore pour iOS et Android, ainsi qu'à ces pages. Elle ne couvre pas les autres sites vers lesquels l'application renvoie, qui ont leurs propres politiques."
+          ]
+        },
+        {
+          "h": "Les informations que nous collectons",
+          "p": [
+            "Aucune qui vous identifie. Il n'y a ni compte, ni inscription, ni adresse e-mail, ni nom. Nous n'utilisons ni outils d'analyse, ni identifiants publicitaires, ni SDK de suivi tiers, et l'application ne contient aucune publicité."
+          ]
+        },
+        {
+          "h": "Ce que l'application enregistre sur votre appareil",
+          "p": [
+            "Pour que l'application se souvienne de vos réglages d'une session à l'autre, elle enregistre ce qui suit dans son espace de stockage privé, sur votre téléphone :"
+          ],
+          "ul": [
+            "la langue que vous avez choisie",
+            "si vous avez terminé les écrans d'introduction",
+            "votre championnat par défaut",
+            "les équipes et les matchs que vous épinglez",
+            "votre préférence de notifications",
+            "si Premium est actif"
+          ]
+        },
+        {
+          "h": "Cela ne quitte jamais votre téléphone",
+          "p": [
+            "Rien de tout cela ne nous est transmis, ni à qui que ce soit d'autre, et tout est supprimé lorsque vous désinstallez l'application."
+          ]
+        },
+        {
+          "h": "Ce qui quitte votre appareil",
+          "p": [
+            "Pour afficher les scores en direct, l'application demande les données de football à notre service de résultats et les écussons des clubs au serveur d'images du fournisseur de données. Ces requêtes ne transportent que ce que transporte n'importe quelle requête web : une adresse IP, un horodatage et le type général d'appareil et de système d'exploitation.",
+            "Ces informations servent à renvoyer la réponse et à maintenir le service en fonctionnement et sécurisé. Nous n'y associons aucun identifiant, ne les utilisons pas pour établir un profil de vous et ne les combinons avec rien d'autre."
+          ]
+        },
+        {
+          "h": "Notifications",
+          "p": [
+            "Votre choix d'activer ou non les notifications est enregistré sur votre appareil. Les notifications push ne sont pas activées dans la version actuelle. Si elles étaient ajoutées plus tard, un jeton d'appareil servirait uniquement à vous envoyer les alertes de match demandées, et vous pourrez les désactiver à tout moment dans les réglages de votre téléphone."
+          ]
+        },
+        {
+          "h": "Les services dont nous dépendons",
+          "p": [
+            "L'application et ces pages reposent sur un petit nombre de tiers :"
+          ],
+          "ul": [
+            "API-Football (api-sports.io) — données des matchs, classements et écussons",
+            "Railway — hébergement du service de résultats interrogé par l'application",
+            "Vercel — hébergement de ces pages",
+            "BBC Sport — le lien actualités, qui s'ouvre dans votre navigateur"
+          ]
+        },
+        {
+          "h": "Nous ne partageons rien avec eux",
+          "p": [
+            "Nous ne partageons aucune donnée personnelle avec ces prestataires, car nous n'en détenons aucune. Lorsque vous suivez le lien actualités, vous quittez l'application et la politique de confidentialité de ce site s'applique."
+          ]
+        },
+        {
+          "h": "Enfants",
+          "p": [
+            "PulseScore ne s'adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment d'informations les concernant. Comme l'application ne collecte aucune donnée personnelle de qui que ce soit, nous ne détenons rien concernant un enfant."
+          ]
+        },
+        {
+          "h": "Votre contrôle sur vos données",
+          "p": [
+            "Comme rien n'est lié à votre identité, il n'y a aucun compte à fermer ni aucune donnée personnelle à demander, corriger ou exporter — nous n'en avons tout simplement pas.",
+            "Vous pouvez modifier à tout moment votre langue, votre championnat par défaut et vos équipes épinglées dans les Réglages, et supprimer l'application efface tout ce qu'elle avait enregistré sur votre appareil."
+          ]
+        },
+        {
+          "h": "Modifications et contact",
+          "p": [
+            "Si cette politique évolue, nous mettrons à jour la date affichée en haut de cette page. Pour toute question, écrivez à {{EMAIL}}."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "summary": "PulseScore est une application gratuite de scores de football fournie à titre informatif uniquement. Les données proviennent d'un fournisseur tiers et peuvent être retardées ou erronées — ne vous y fiez jamais pour des paris ou d'autres décisions.",
+      "sections": [
+        {
+          "h": "Acceptation des conditions",
+          "p": [
+            "En téléchargeant ou en utilisant PulseScore, vous acceptez les présentes conditions. Si vous ne les acceptez pas, veuillez ne pas utiliser l'application."
+          ]
+        },
+        {
+          "h": "Ce qu'est PulseScore",
+          "p": [
+            "PulseScore est une application mobile qui affiche le calendrier des matchs, les scores en direct, les faits de match et les classements, à des fins d'information et de divertissement. Son téléchargement est gratuit et aucun compte n'est nécessaire."
+          ]
+        },
+        {
+          "h": "Exactitude des informations",
+          "p": [
+            "Les scores, les heures de coup d'envoi, les classements et les faits de match proviennent d'un fournisseur de données tiers. Ils peuvent être retardés, incomplets, interrompus ou tout simplement erronés, et les matchs peuvent être reportés ou reprogrammés sans préavis.",
+            "Tout ce que contient l'application est fourni à titre d'information générale uniquement. Ne vous en servez pas pour des paris, des décisions financières ou toute autre décision — vérifiez toujours auprès d'une source officielle. Nous ne sommes pas responsables des pertes résultant de la confiance accordée aux données affichées."
+          ]
+        },
+        {
+          "h": "Comment utiliser l'application",
+          "p": [
+            "Utilisez PulseScore de manière licite et raisonnable. En particulier, vous ne devez pas :"
+          ],
+          "ul": [
+            "procéder à de l'ingénierie inverse, décompiler ou modifier l'application",
+            "extraire massivement, copier ou revendre les données affichées",
+            "tenter de perturber ou de surcharger le service, ou d'y accéder sans autorisation",
+            "utiliser l'application à des fins illicites"
+          ]
+        },
+        {
+          "h": "Premium",
+          "p": [
+            "L'application propose un niveau Premium facultatif. Aucun abonnement payant n'est vendu dans la version actuelle et les fonctions Premium sont débloquées gratuitement dans l'application.",
+            "Si des offres payantes étaient introduites plus tard, les achats, renouvellements et remboursements seraient gérés par l'App Store d'Apple ou Google Play selon leurs propres conditions, et le prix ainsi que la période de facturation vous seraient présentés avant l'achat."
+          ]
+        },
+        {
+          "h": "Propriété intellectuelle",
+          "p": [
+            "L'application elle-même — sa conception, son code et son identité — nous appartient. Les écussons des clubs, les logos des championnats et les noms des compétitions et des équipes appartiennent à leurs propriétaires respectifs et ne sont affichés que pour identifier les compétitions et les clubs dans l'application. Nous n'en revendiquons aucune propriété et ne sommes ni affiliés, ni soutenus, ni sponsorisés par un club, un championnat ou une instance dirigeante."
+          ]
+        },
+        {
+          "h": "Liens vers d'autres sites",
+          "p": [
+            "L'application renvoie vers des contenus tiers, comme l'actualité du football. Nous ne contrôlons pas ces sites et ne sommes pas responsables de leur contenu, de leur exactitude ou de leurs pratiques en matière de confidentialité."
+          ]
+        },
+        {
+          "h": "Absence de garantie et limites de responsabilité",
+          "p": [
+            "PulseScore est fourni « en l'état » et « selon disponibilité », sans garantie d'aucune sorte. Nous ne promettons ni un fonctionnement ininterrompu ou sans erreur, ni l'exactitude ou l'exhaustivité des données.",
+            "Dans toute la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires ou consécutifs, de la perte de bénéfices ou d'opportunités, ni d'aucune perte résultant d'interruptions du service ou d'inexactitudes dans les données."
+          ]
+        },
+        {
+          "h": "Modifications et fin du service",
+          "p": [
+            "Nous pouvons faire évoluer l'application et les présentes conditions ; continuer à utiliser l'application après une modification vaut acceptation des conditions mises à jour. Nous pouvons également suspendre ou interrompre le service, ou une partie de celui-ci, à tout moment.",
+            "Les présentes conditions sont régies par le droit applicable dans le pays où le développeur est établi, sans égard à ses règles de conflit de lois. Toute question peut être adressée à {{EMAIL}}."
+          ]
+        }
+      ]
+    }
+  }
+}

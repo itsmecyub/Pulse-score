@@ -1,0 +1,168 @@
+{
+  "lang": "de",
+  "dir": "ltr",
+  "brand_tagline": "Live-Fußballergebnisse & Statistiken",
+  "updated_label": "Zuletzt aktualisiert",
+  "updated": "6. September 2026",
+  "lang_picker_label": "In einer anderen Sprache lesen",
+  "docs": {
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "summary": "PulseScore hat keine Konten und kein Tracking. Wir erheben, speichern und verkaufen keine personenbezogenen Daten. Was du in der App einstellst, bleibt auf deinem Telefon.",
+      "sections": [
+        {
+          "h": "Was diese Erklärung abdeckt",
+          "p": [
+            "Diese Erklärung gilt für die PulseScore-App für iOS und Android sowie für diese Seiten. Sie gilt nicht für andere Websites, auf die die App verlinkt; für diese gelten deren eigene Bestimmungen."
+          ]
+        },
+        {
+          "h": "Welche Daten wir erheben",
+          "p": [
+            "Keine, die dich identifizieren. Es gibt kein Konto, keine Registrierung, keine E-Mail-Adresse und keinen Namen. Wir verwenden weder Analysewerkzeuge noch Werbe-IDs oder Tracking-SDKs von Dritten, und die App enthält keine Werbung."
+          ]
+        },
+        {
+          "h": "Was die App auf deinem Gerät speichert",
+          "p": [
+            "Damit die App deine Einstellungen zwischen den Starts behält, speichert sie Folgendes in ihrem privaten Speicher auf deinem Telefon:"
+          ],
+          "ul": [
+            "deine gewählte Sprache",
+            "ob du die Einführungsbildschirme abgeschlossen hast",
+            "deine Standardliga",
+            "die Teams und Spiele, die du anheftest",
+            "deine Mitteilungseinstellung",
+            "ob Premium aktiv ist"
+          ]
+        },
+        {
+          "h": "Das verlässt dein Telefon nie",
+          "p": [
+            "Nichts davon wird an uns oder an Dritte übertragen, und alles wird gelöscht, wenn du die App deinstallierst."
+          ]
+        },
+        {
+          "h": "Was dein Gerät tatsächlich verlässt",
+          "p": [
+            "Um Live-Ergebnisse anzuzeigen, fragt die App Fußballdaten bei unserem Ergebnisdienst und Vereinswappen beim Bildserver des Datenanbieters ab. Diese Anfragen übermitteln nur das, was jede gewöhnliche Webanfrage übermittelt: eine IP-Adresse, einen Zeitstempel und die allgemeine Geräte- und Betriebssystemart.",
+            "Diese Angaben dienen dazu, die Antwort auszuliefern und den Dienst betriebsfähig und sicher zu halten. Wir versehen sie mit keiner Kennung, erstellen daraus kein Profil von dir und führen sie mit nichts anderem zusammen."
+          ]
+        },
+        {
+          "h": "Mitteilungen",
+          "p": [
+            "Deine Entscheidung, Mitteilungen ein- oder auszuschalten, wird auf deinem Gerät gespeichert. Push-Mitteilungen sind in der aktuellen Version nicht aktiviert. Falls sie später hinzukommen, würde ein Gerätetoken ausschließlich dazu dienen, die von dir gewünschten Spielbenachrichtigungen zuzustellen, und du kannst sie jederzeit in den Einstellungen deines Telefons abschalten."
+          ]
+        },
+        {
+          "h": "Dienste, auf die wir angewiesen sind",
+          "p": [
+            "Die App und diese Seiten stützen sich auf wenige Dritte:"
+          ],
+          "ul": [
+            "API-Football (api-sports.io) – Spieldaten, Tabellen und Vereinswappen",
+            "Railway – Hosting des Ergebnisdienstes, den die App abfragt",
+            "Vercel – Hosting dieser Seiten",
+            "BBC Sport – der Nachrichten-Link, der in deinem Browser geöffnet wird"
+          ]
+        },
+        {
+          "h": "Wir geben nichts an sie weiter",
+          "p": [
+            "Wir geben an keinen dieser Anbieter personenbezogene Daten weiter, weil wir keine besitzen. Wenn du dem Nachrichten-Link folgst, verlässt du die App, und es gilt die Datenschutzerklärung der jeweiligen Website."
+          ]
+        },
+        {
+          "h": "Kinder",
+          "p": [
+            "PulseScore richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten über sie. Da die App von niemandem personenbezogene Daten erhebt, liegt uns auch über ein Kind nichts vor."
+          ]
+        },
+        {
+          "h": "Deine Kontrolle über deine Daten",
+          "p": [
+            "Da nichts mit deiner Identität verknüpft ist, gibt es kein Konto zu schließen und keine personenbezogenen Daten, die du anfordern, berichtigen oder exportieren könntest – wir haben schlicht keine.",
+            "Sprache, Standardliga und angeheftete Teams kannst du jederzeit in den Einstellungen ändern, und beim Löschen der App wird alles entfernt, was sie auf deinem Gerät gespeichert hatte."
+          ]
+        },
+        {
+          "h": "Änderungen und Kontakt",
+          "p": [
+            "Sollte sich diese Erklärung ändern, aktualisieren wir das Datum oben auf dieser Seite. Bei Fragen schreib an {{EMAIL}}."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "summary": "PulseScore ist eine kostenlose Fußball-Ergebnis-App, die ausschließlich der Information dient. Die Daten stammen von einem Drittanbieter und können verzögert oder falsch sein – verlasse dich darauf niemals bei Wetten oder anderen Entscheidungen.",
+      "sections": [
+        {
+          "h": "Annahme dieser Bedingungen",
+          "p": [
+            "Mit dem Herunterladen oder Nutzen von PulseScore erklärst du dich mit diesen Bedingungen einverstanden. Wenn du ihnen nicht zustimmst, nutze die App bitte nicht."
+          ]
+        },
+        {
+          "h": "Was PulseScore ist",
+          "p": [
+            "PulseScore ist eine mobile App, die Spielpläne, Live-Ergebnisse, Spielereignisse und Tabellen zu Informations- und Unterhaltungszwecken anzeigt. Sie ist kostenlos und benötigt kein Konto."
+          ]
+        },
+        {
+          "h": "Richtigkeit der Angaben",
+          "p": [
+            "Ergebnisse, Anstoßzeiten, Tabellen und Spielereignisse stammen von einem externen Datenanbieter. Sie können verzögert, unvollständig, unterbrochen oder schlicht falsch sein, und Spiele können ohne Vorankündigung verlegt oder abgesagt werden.",
+            "Alle Inhalte der App dienen ausschließlich der allgemeinen Information. Nutze sie nicht für Wetten, finanzielle oder sonstige Entscheidungen – prüfe stets eine offizielle Quelle. Für Schäden, die aus dem Vertrauen auf die angezeigten Daten entstehen, haften wir nicht."
+          ]
+        },
+        {
+          "h": "Wie du die App nutzen darfst",
+          "p": [
+            "Nutze PulseScore rechtmäßig und in angemessener Weise. Insbesondere darfst du nicht:"
+          ],
+          "ul": [
+            "die App zurückentwickeln, dekompilieren oder verändern",
+            "die angezeigten Daten massenhaft auslesen, kopieren oder weiterverkaufen",
+            "versuchen, den Dienst zu stören, zu überlasten oder unbefugt darauf zuzugreifen",
+            "die App für rechtswidrige Zwecke einsetzen"
+          ]
+        },
+        {
+          "h": "Premium",
+          "p": [
+            "Die App enthält eine optionale Premium-Stufe. In der aktuellen Version wird kein kostenpflichtiges Abonnement verkauft; die Premium-Funktionen werden in der App kostenfrei freigeschaltet.",
+            "Falls später kostenpflichtige Angebote eingeführt werden, wickeln der Apple App Store oder Google Play Käufe, Verlängerungen und Erstattungen nach ihren eigenen Bedingungen ab, und Preis sowie Abrechnungszeitraum werden dir vor dem Kauf angezeigt."
+          ]
+        },
+        {
+          "h": "Geistiges Eigentum",
+          "p": [
+            "Die App selbst – Gestaltung, Code und Marke – gehört uns. Vereinswappen, Liga-Logos sowie Wettbewerbs- und Mannschaftsnamen gehören ihren jeweiligen Inhabern und werden nur gezeigt, um die Wettbewerbe und Vereine in der App zu kennzeichnen. Wir erheben daran keinen Eigentumsanspruch und sind mit keinem Verein, keiner Liga und keinem Verband verbunden, von ihnen unterstützt oder gesponsert."
+          ]
+        },
+        {
+          "h": "Links zu anderen Websites",
+          "p": [
+            "Die App verlinkt auf Inhalte Dritter, etwa Fußballnachrichten. Wir haben keinen Einfluss auf diese Websites und sind für deren Inhalte, Richtigkeit oder Datenschutzpraktiken nicht verantwortlich."
+          ]
+        },
+        {
+          "h": "Keine Gewährleistung und Haftungsgrenzen",
+          "p": [
+            "PulseScore wird „wie besehen“ und „wie verfügbar“ bereitgestellt, ohne Gewährleistung jeder Art. Wir sichern weder einen unterbrechungs- und fehlerfreien Betrieb noch die Richtigkeit oder Vollständigkeit der Daten zu.",
+            "Soweit gesetzlich zulässig, haften wir nicht für mittelbare, beiläufige oder Folgeschäden, für entgangenen Gewinn oder entgangene Gelegenheiten sowie für Schäden aus Dienstunterbrechungen oder Datenungenauigkeiten."
+          ]
+        },
+        {
+          "h": "Änderungen und Beendigung des Dienstes",
+          "p": [
+            "Wir können die App und diese Bedingungen von Zeit zu Zeit aktualisieren; nutzt du die App nach einer Änderung weiter, erkennst du die aktualisierten Bedingungen an. Wir können den Dienst oder Teile davon zudem jederzeit aussetzen oder einstellen.",
+            "Diese Bedingungen unterliegen dem Recht des Landes, in dem der Entwickler niedergelassen ist, unter Ausschluss seiner Kollisionsnormen. Fragen zu diesen Bedingungen kannst du an {{EMAIL}} richten."
+          ]
+        }
+      ]
+    }
+  }
+}

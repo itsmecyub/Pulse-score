@@ -89,18 +89,25 @@ class FilterChips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        for (var i = 0; i < labels.length; i++)
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: _Chip(
-              label: labels[i],
-              selected: i == index,
-              onTap: () => onChanged(i),
+    // The three chips need about 406pt at their natural size, which is wider
+    // than an iPhone SE — and every translated label is longer than the
+    // English one. Scrolling keeps the row intact at any width in any
+    // language instead of overflowing it.
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          for (var i = 0; i < labels.length; i++)
+            Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: _Chip(
+                label: labels[i],
+                selected: i == index,
+                onTap: () => onChanged(i),
+              ),
             ),
-          ),
-      ],
+        ],
+      ),
     );
   }
 }

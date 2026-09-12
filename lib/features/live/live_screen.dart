@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text.dart';
+import '../../core/utils/formatters.dart';
 import '../../core/widgets/empty_state.dart';
 import '../../core/widgets/live_dot.dart';
 import '../../core/widgets/match_cards.dart';
@@ -60,7 +61,9 @@ class _LiveScreenState extends State<LiveScreen>
     // suspend the timer anyway, so resume with a fresh fetch instead.
     final matches = context.read<MatchesState>();
     if (state == AppLifecycleState.resumed) {
-      matches.load(silent: true);
+      // Coming back to the app should show current scores, not whatever was
+      // cached before it was backgrounded.
+      matches.load(silent: true, force: true);
       matches.startPolling();
     } else {
       matches.stopPolling();
@@ -226,13 +229,21 @@ class _LiveScreenState extends State<LiveScreen>
                   child: EmptyMessage(
                     icon: _filter == _Filter.favorites
                         ? Icons.push_pin_outlined
-                        : Icons.sports_soccer_outlined,
+                        : matches.backendHasNoData
+                            ? Icons.cloud_off_rounded
+                            : Icons.sports_soccer_outlined,
                     title: _filter == _Filter.favorites
                         ? s('no_pinned_title')
-                        : s('no_live_title'),
+                        : matches.backendHasNoData
+                            ? s('service_no_data')
+                            : s('no_live_title'),
+                    // When the backend is serving nothing, "nothing is live
+                    // right now" would be a guess we cannot actually make.
                     body: _filter == _Filter.favorites
                         ? s('no_pinned_body')
-                        : s('no_live_body'),
+                        : matches.backendHasNoData
+                            ? ''
+                            : s('no_live_body'),
                   ),
                 ),
 
@@ -282,11 +293,23 @@ class _TopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final isPremium = context.watch<AppState>().isPremium;
 
+    final updated = matches.backendLastUpdated ?? matches.lastUpdated;
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 8, 12, 4),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
         children: [
+          // Proof the app is actually talking to the backend, and how current
+          // what you are looking at is.
+          if (updated != null)
+            Expanded(
+              child: Text(
+                _freshness(updated),
+                style: AppText.metaSmall.copyWith(color: AppColors.textFaint),
+              ),
+            )
+          else
+            const Spacer(),
           _RoundButton(
             icon: Icons.refresh_rounded,
             color: AppColors.green,
@@ -306,6 +329,13 @@ class _TopBar extends StatelessWidget {
       ),
     );
   }
+}
+
+/// "UPDATED JUST NOW" / "UPDATED 4M AGO" — `ago()` returns "now" under a
+/// minute, which would otherwise read as "updated now ago".
+String _freshness(DateTime at) {
+  final label = ago(at);
+  return label == 'now' ? 'UPDATED JUST NOW' : 'UPDATED ${label.toUpperCase()} AGO';
 }
 
 class _RoundButton extends StatelessWidget {

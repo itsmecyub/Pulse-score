@@ -15,9 +15,12 @@ import '../match/match_detail_screen.dart';
 
 /// One league: its fixtures and its table.
 class LeagueScreen extends StatefulWidget {
-  const LeagueScreen({super.key, required this.league});
+  const LeagueScreen({super.key, required this.league, this.initialTab = 0});
 
   final CatalogLeague league;
+
+  /// 0 = fixtures, 1 = standings. Lets a caller land straight on the table.
+  final int initialTab;
 
   @override
   State<LeagueScreen> createState() => _LeagueScreenState();
@@ -25,7 +28,11 @@ class LeagueScreen extends StatefulWidget {
 
 class _LeagueScreenState extends State<LeagueScreen>
     with SingleTickerProviderStateMixin {
-  late final TabController _tabs = TabController(length: 2, vsync: this);
+  late final TabController _tabs = TabController(
+    length: 2,
+    vsync: this,
+    initialIndex: widget.initialTab,
+  );
 
   List<Fixture> _fixtures = const [];
   List<Standing> _standings = const [];
@@ -112,7 +119,7 @@ class _LeagueScreenState extends State<LeagueScreen>
                     ? EmptyMessage(
                         icon: Icons.table_chart_outlined,
                         title: s('standings'),
-                        body: s('no_fixtures'),
+                        body: s('no_standings'),
                       )
                     : StandingsTable(rows: _standings),
               ],

@@ -13,6 +13,7 @@ import '../../data/models/match_event.dart';
 import '../../data/repositories/football_repository.dart';
 import '../../l10n/strings.dart';
 import '../../state/app_state.dart';
+import '../../ads/navigation_ad_helper.dart';
 import '../premium/paywall_screen.dart';
 
 class MatchDetailScreen extends StatefulWidget {
@@ -33,6 +34,9 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   void initState() {
     super.initState();
     _load();
+    // Opening a match counts as a meaningful tap: every second one shows an
+    // interstitial.
+    maybeShowInterstitialAd();
   }
 
   Future<void> _load() async {

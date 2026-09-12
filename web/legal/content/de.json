@@ -1,0 +1,111 @@
+{
+ "lang": "de",
+ "dir": "ltr",
+ "brand_tagline": "Live-Fußballergebnisse & Statistiken",
+ "updated_label": "Zuletzt aktualisiert",
+ "updated": "6. September 2026",
+ "lang_picker_label": "In einer anderen Sprache lesen",
+ "docs": {
+  "privacy": {
+   "title": "Datenschutzerklärung",
+   "summary": "PulseScore hat keine Konten und kein Tracking. Wir erheben, speichern und verkaufen keine personenbezogenen Daten.",
+   "sections": [
+    {
+     "h": "Was wir erheben",
+     "p": [
+      "Nichts, was dich identifiziert. Kein Konto, keine Registrierung, keine E-Mail-Adresse, kein Name. Wir nutzen weder Analysewerkzeuge noch Werbe-IDs oder Tracking Dritter, und die App enthält keine Werbung."
+     ]
+    },
+    {
+     "h": "Was auf deinem Gerät bleibt",
+     "p": [
+      "Die App speichert deine Einstellungen in ihrem privaten Bereich auf dem Telefon:"
+     ],
+     "ul": [
+      "gewählte Sprache",
+      "ob die Einführung abgeschlossen ist",
+      "Standardliga",
+      "angeheftete Teams und Spiele",
+      "Mitteilungseinstellung",
+      "ob Premium aktiv ist"
+     ],
+     "p2": [
+      "Nichts davon wird irgendwohin übertragen, und beim Deinstallieren wird alles gelöscht."
+     ]
+    },
+    {
+     "h": "Was dein Gerät verlässt",
+     "p": [
+      "Um Ergebnisse anzuzeigen, fragt die App Daten bei unserem Ergebnisdienst und Wappen beim Bildserver des Anbieters ab. Diese Anfragen übermitteln nur das, was jede Webanfrage übermittelt: eine IP-Adresse, einen Zeitstempel und die allgemeine Geräteart — genutzt, um die Antwort zu liefern und den Dienst sicher zu halten. Wir vergeben keine Kennung und erstellen kein Profil."
+     ]
+    },
+    {
+     "h": "Mitteilungen",
+     "p": [
+      "Deine Entscheidung wird auf dem Gerät gespeichert. Push-Mitteilungen sind in dieser Version nicht aktiviert. Kämen sie hinzu, diente ein Gerätetoken allein der Zustellung der gewünschten Spielbenachrichtigungen, und du kannst sie in den Telefoneinstellungen abschalten."
+     ]
+    },
+    {
+     "h": "Genutzte Dienste",
+     "p": [
+      "API-Football für Spieldaten und Wappen, Railway für den Ergebnisdienst, Vercel für diese Seiten und BBC Sport für den Nachrichten-Link, der in deinem Browser unter dessen eigener Richtlinie öffnet. Wir geben ihnen keine personenbezogenen Daten weiter, weil wir keine besitzen."
+     ]
+    },
+    {
+     "h": "Kinder, Kontrolle und Kontakt",
+     "p": [
+      "PulseScore richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich nichts über sie. Da nichts mit deiner Identität verknüpft ist, gibt es kein Konto zu schließen und keine Daten anzufordern oder zu exportieren. Das Löschen der App entfernt alles Gespeicherte. Bei Änderungen aktualisieren wir das Datum oben. Fragen: {{EMAIL}}."
+     ]
+    }
+   ]
+  },
+  "terms": {
+   "title": "Nutzungsbedingungen",
+   "summary": "PulseScore ist eine kostenlose Ergebnis-App, die nur der Information dient. Daten können verzögert oder falsch sein — verlasse dich darauf nie bei Wetten oder anderen Entscheidungen.",
+   "sections": [
+    {
+     "h": "Nutzung der App",
+     "p": [
+      "Mit dem Herunterladen oder Nutzen von PulseScore akzeptierst du diese Bedingungen; andernfalls nutze die App bitte nicht. Sie zeigt Spielpläne, Live-Ergebnisse, Spielereignisse und Tabellen zu Informations- und Unterhaltungszwecken, ist kostenlos und benötigt kein Konto."
+     ]
+    },
+    {
+     "h": "Richtigkeit",
+     "p": [
+      "Ergebnisse, Anstoßzeiten, Tabellen und Ereignisse stammen von einem Drittanbieter und können verzögert, unvollständig oder falsch sein; Spiele können ohne Vorankündigung verlegt werden. Alles dient nur der allgemeinen Information: Nutze es nicht für Wetten oder finanzielle und sonstige Entscheidungen und prüfe stets eine offizielle Quelle. Für Schäden daraus haften wir nicht."
+     ]
+    },
+    {
+     "h": "Was nicht erlaubt ist",
+     "p": [
+      "Nutze die App rechtmäßig. Nicht erlaubt ist:"
+     ],
+     "ul": [
+      "Zurückentwickeln, Dekompilieren oder Verändern",
+      "massenhaftes Auslesen, Kopieren oder Weiterverkaufen der Daten",
+      "Stören, Überlasten oder unbefugter Zugriff auf den Dienst",
+      "jede rechtswidrige Nutzung"
+     ]
+    },
+    {
+     "h": "Premium",
+     "p": [
+      "Die App hat eine optionale Premium-Stufe. In dieser Version wird kein kostenpflichtiges Abo verkauft und Premium wird kostenlos freigeschaltet. Kämen kostenpflichtige Angebote hinzu, wickeln App Store oder Google Play Käufe und Erstattungen nach ihren Bedingungen ab, und der Preis wird vor dem Kauf angezeigt."
+     ]
+    },
+    {
+     "h": "Eigentum und andere Websites",
+     "p": [
+      "Die App, ihr Design und ihr Code gehören uns. Wappen, Logos sowie Wettbewerbs- und Mannschaftsnamen gehören ihren Inhabern und werden nur zur Kennzeichnung gezeigt; wir erheben keinen Eigentumsanspruch und sind mit keinem Verein, keiner Liga und keinem Verband verbunden oder von ihnen unterstützt. Links zu Inhalten Dritter, etwa Nachrichten, liegen außerhalb unserer Kontrolle."
+     ]
+    },
+    {
+     "h": "Keine Gewährleistung, Änderungen und Kontakt",
+     "p": [
+      "Die App wird „wie besehen“ und „wie verfügbar“ ohne Gewährleistung bereitgestellt. Soweit gesetzlich zulässig haften wir nicht für mittelbare oder Folgeschäden und nicht für Unterbrechungen oder Datenungenauigkeiten. Wir können App und Bedingungen ändern; weitere Nutzung gilt als Zustimmung, und wir können den Dienst aussetzen oder einstellen. Es gilt das Recht des Landes, in dem der Entwickler niedergelassen ist. Fragen: {{EMAIL}}."
+     ]
+    }
+   ]
+  }
+ }
+}

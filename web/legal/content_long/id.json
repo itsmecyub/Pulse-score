@@ -1,0 +1,168 @@
+{
+  "lang": "id",
+  "dir": "ltr",
+  "brand_tagline": "Skor & Statistik Sepak Bola Langsung",
+  "updated_label": "Terakhir diperbarui",
+  "updated": "6 September 2026",
+  "lang_picker_label": "Baca dalam bahasa lain",
+  "docs": {
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "summary": "PulseScore tidak memiliki akun dan tidak melakukan pelacakan. Kami tidak mengumpulkan, menyimpan, atau menjual informasi pribadi. Apa pun yang Anda atur di aplikasi tetap ada di ponsel Anda.",
+      "sections": [
+        {
+          "h": "Cakupan kebijakan ini",
+          "p": [
+            "Kebijakan ini berlaku untuk aplikasi PulseScore di iOS dan Android serta halaman-halaman ini. Kebijakan ini tidak mencakup situs lain yang ditautkan dari aplikasi, karena situs tersebut memiliki kebijakannya sendiri."
+          ]
+        },
+        {
+          "h": "Informasi yang kami kumpulkan",
+          "p": [
+            "Tidak ada yang mengidentifikasi Anda. Tidak ada akun, pendaftaran, alamat email, maupun nama. Kami tidak menggunakan analitik, pengenal iklan, atau SDK pelacakan pihak ketiga, dan aplikasi ini tidak memuat iklan."
+          ]
+        },
+        {
+          "h": "Yang disimpan aplikasi di perangkat Anda",
+          "p": [
+            "Agar aplikasi mengingat pengaturan Anda di antara sesi, aplikasi menyimpan hal-hal berikut di penyimpanan pribadinya, di dalam ponsel Anda:"
+          ],
+          "ul": [
+            "bahasa yang Anda pilih",
+            "apakah Anda sudah menyelesaikan layar pengenalan",
+            "liga bawaan Anda",
+            "tim dan pertandingan yang Anda sematkan",
+            "preferensi notifikasi Anda",
+            "apakah Premium sedang aktif"
+          ]
+        },
+        {
+          "h": "Ini tidak pernah meninggalkan ponsel Anda",
+          "p": [
+            "Tidak satu pun dari data itu dikirim ke kami atau pihak lain, dan semuanya terhapus saat Anda mencopot aplikasi."
+          ]
+        },
+        {
+          "h": "Yang memang meninggalkan perangkat Anda",
+          "p": [
+            "Untuk menampilkan skor langsung, aplikasi meminta data sepak bola dari layanan skor kami dan lambang klub dari server gambar penyedia data. Permintaan itu hanya membawa apa yang dibawa permintaan web biasa: alamat IP, waktu, serta jenis perangkat dan sistem operasi secara umum.",
+            "Informasi itu digunakan untuk mengirimkan respons dan menjaga layanan tetap berjalan serta aman. Kami tidak melampirkan pengenal apa pun padanya, tidak memakainya untuk menyusun profil Anda, dan tidak menggabungkannya dengan data lain."
+          ]
+        },
+        {
+          "h": "Notifikasi",
+          "p": [
+            "Pilihan Anda untuk menyalakan atau mematikan notifikasi disimpan di perangkat Anda. Notifikasi push belum diaktifkan pada rilis ini. Jika nanti ditambahkan, token perangkat hanya akan dipakai untuk mengirimkan peringatan pertandingan yang Anda minta, dan Anda dapat mematikannya kapan saja di pengaturan ponsel."
+          ]
+        },
+        {
+          "h": "Layanan yang kami gunakan",
+          "p": [
+            "Aplikasi dan halaman ini bergantung pada sedikit pihak ketiga:"
+          ],
+          "ul": [
+            "API-Football (api-sports.io) — data pertandingan, klasemen, dan lambang klub",
+            "Railway — hosting layanan skor yang dihubungi aplikasi",
+            "Vercel — hosting halaman ini",
+            "BBC Sport — tautan berita, yang terbuka di peramban Anda"
+          ]
+        },
+        {
+          "h": "Kami tidak membagikan apa pun kepada mereka",
+          "p": [
+            "Kami tidak membagikan informasi pribadi kepada penyedia mana pun, karena kami memang tidak memilikinya. Saat Anda membuka tautan berita, Anda meninggalkan aplikasi dan kebijakan privasi situs tersebut yang berlaku."
+          ]
+        },
+        {
+          "h": "Anak-anak",
+          "p": [
+            "PulseScore tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan informasi tentang mereka. Karena aplikasi tidak mengumpulkan informasi pribadi siapa pun, tidak ada data anak yang kami simpan."
+          ]
+        },
+        {
+          "h": "Kendali Anda atas data Anda",
+          "p": [
+            "Karena tidak ada yang terkait dengan identitas Anda, tidak ada akun yang perlu ditutup dan tidak ada data pribadi yang perlu diminta, dikoreksi, atau diekspor — kami memang tidak memilikinya.",
+            "Anda dapat mengubah bahasa, liga bawaan, dan tim yang disematkan kapan saja di Pengaturan, dan menghapus aplikasi akan menghapus semua yang tersimpan di perangkat Anda."
+          ]
+        },
+        {
+          "h": "Perubahan dan kontak",
+          "p": [
+            "Jika kebijakan ini berubah, kami akan memperbarui tanggal yang tertera di bagian atas halaman ini. Jika ada pertanyaan, kirim surel ke {{EMAIL}}."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Ketentuan Layanan",
+      "summary": "PulseScore adalah aplikasi skor sepak bola gratis yang disediakan hanya untuk informasi. Data berasal dari penyedia pihak ketiga dan bisa tertunda atau keliru — jangan pernah menjadikannya dasar untuk taruhan atau keputusan lain.",
+      "sections": [
+        {
+          "h": "Menyetujui ketentuan ini",
+          "p": [
+            "Dengan mengunduh atau menggunakan PulseScore, Anda menyetujui ketentuan ini. Jika Anda tidak setuju, mohon jangan gunakan aplikasi ini."
+          ]
+        },
+        {
+          "h": "Apa itu PulseScore",
+          "p": [
+            "PulseScore adalah aplikasi seluler yang menampilkan jadwal, skor langsung, kejadian pertandingan, dan klasemen liga untuk tujuan informasi dan hiburan. Aplikasi ini gratis dan tidak memerlukan akun."
+          ]
+        },
+        {
+          "h": "Keakuratan informasi",
+          "p": [
+            "Skor, waktu kickoff, klasemen, dan kejadian pertandingan berasal dari penyedia data pihak ketiga. Data tersebut bisa tertunda, tidak lengkap, terputus, atau memang keliru, dan pertandingan dapat ditunda atau dijadwalkan ulang tanpa pemberitahuan.",
+            "Semua yang ada di aplikasi disediakan hanya sebagai informasi umum. Jangan menjadikannya dasar untuk taruhan, keputusan keuangan, atau keputusan apa pun — selalu periksa sumber resmi. Kami tidak bertanggung jawab atas kerugian yang timbul karena mengandalkan data yang ditampilkan."
+          ]
+        },
+        {
+          "h": "Cara Anda boleh memakai aplikasi",
+          "p": [
+            "Gunakan PulseScore secara sah dan wajar. Khususnya, jangan:"
+          ],
+          "ul": [
+            "merekayasa balik, mendekompilasi, atau memodifikasi aplikasi",
+            "mengambil data secara massal, menyalin, atau menjual ulang data yang ditampilkan",
+            "mencoba mengganggu, membebani, atau mengakses layanan tanpa izin",
+            "menggunakan aplikasi untuk tujuan yang melanggar hukum"
+          ]
+        },
+        {
+          "h": "Premium",
+          "p": [
+            "Aplikasi menyertakan tingkat Premium opsional. Pada rilis ini tidak ada langganan berbayar yang dijual, dan fitur Premium dibuka di aplikasi tanpa biaya.",
+            "Jika paket berbayar diperkenalkan nanti, pembelian, perpanjangan, dan pengembalian dana akan ditangani oleh Apple App Store atau Google Play menurut ketentuan mereka, dan harga serta periode penagihan akan ditampilkan sebelum Anda membeli."
+          ]
+        },
+        {
+          "h": "Kekayaan intelektual",
+          "p": [
+            "Aplikasi itu sendiri — desain, kode, dan mereknya — milik kami. Lambang klub, logo liga, serta nama kompetisi dan tim adalah milik pemiliknya masing-masing dan hanya ditampilkan untuk mengidentifikasi kompetisi dan klub di dalam aplikasi. Kami tidak mengklaim kepemilikan atasnya dan tidak berafiliasi, didukung, atau disponsori oleh klub, liga, maupun badan pengatur mana pun."
+          ]
+        },
+        {
+          "h": "Tautan ke situs lain",
+          "p": [
+            "Aplikasi menautkan ke konten pihak ketiga, misalnya berita sepak bola. Kami tidak mengendalikan situs tersebut dan tidak bertanggung jawab atas isi, keakuratan, atau praktik privasinya."
+          ]
+        },
+        {
+          "h": "Tanpa jaminan dan batas tanggung jawab",
+          "p": [
+            "PulseScore disediakan \"sebagaimana adanya\" dan \"sebagaimana tersedia\", tanpa jaminan dalam bentuk apa pun. Kami tidak menjanjikan layanan bebas gangguan atau bebas kesalahan, maupun bahwa datanya akurat atau lengkap.",
+            "Sejauh diizinkan hukum, kami tidak bertanggung jawab atas kerugian tidak langsung, insidental, atau konsekuensial, atas hilangnya keuntungan atau peluang, maupun atas kerugian yang timbul dari gangguan layanan atau ketidakakuratan data."
+          ]
+        },
+        {
+          "h": "Perubahan dan penghentian layanan",
+          "p": [
+            "Kami dapat memperbarui aplikasi dan ketentuan ini dari waktu ke waktu; terus menggunakan aplikasi setelah perubahan berarti Anda menerima ketentuan yang diperbarui. Kami juga dapat menangguhkan atau menghentikan layanan, atau bagian mana pun darinya, kapan saja.",
+            "Ketentuan ini diatur oleh hukum yang berlaku di negara tempat pengembang berkedudukan, tanpa memperhatikan aturan pertentangan hukumnya. Pertanyaan tentang ketentuan ini dapat dikirim ke {{EMAIL}}."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+workflows:
+  testFlight:
+    name: Ayoub
+    integrations:
+      app_store_connect: "Ayoub Oustousse"
+    environment:
+      flutter: stable
+      ios_signing:
+        # Codemagic creates and fetches the distribution certificate and
+        # provisioning profile for this bundle id on every build, so there is
+        # no manually uploaded profile to drift out of sync with the project.
+        distribution_type: app_store
+        bundle_identifier: com.yuba.mangaty
+    scripts:
+      - name: Disable Swift Package Manager
+        script: flutter config --no-enable-swift-package-manager
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Install CocoaPods dependencies
+        script: find . -name "Podfile" -execdir pod install \;
+      # Must run after pod install so the signing settings it writes into
+      # Runner.xcodeproj are the ones the archive actually uses.
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
+      # App Store Connect refuses a build whose CFBundleVersion it has already
+      # seen, and pubspec.yaml pins it to 1. BUILD_NUMBER is Codemagic's own
+      # counter, so every build uploads under a number one higher than the last.
+      - name: Build IPA
+        script: flutter build ipa --release --build-number=$BUILD_NUMBER --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      email:
+        recipients:
+          - yobex12@gmail.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration

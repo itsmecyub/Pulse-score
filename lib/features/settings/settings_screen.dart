@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/config/api_config.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text.dart';
 import '../../core/theme/app_theme.dart';
@@ -104,14 +105,14 @@ class SettingsScreen extends StatelessWidget {
                 icon: Icons.lock_rounded,
                 label: s('privacy_policy'),
                 external: true,
-                onTap: () => _open('https://pulsescore.app/privacy'),
+                onTap: () => _openLegal('privacy', app.languageCode),
               ),
               const _Rule(),
               SettingsRow(
                 icon: Icons.description_rounded,
                 label: s('terms'),
                 external: true,
-                onTap: () => _open('https://pulsescore.app/terms'),
+                onTap: () => _openLegal('terms', app.languageCode),
               ),
             ],
           ),
@@ -154,6 +155,13 @@ class SettingsScreen extends StatelessWidget {
 
   static Future<void> _open(String url) =>
       launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+
+  /// Opens a legal page in the language the app is currently set to, so a
+  /// reader is not dropped into English after choosing Vietnamese.
+  static Future<void> _openLegal(String doc, String languageCode) => launchUrl(
+        ApiConfig.legalUri(doc, languageCode),
+        mode: LaunchMode.externalApplication,
+      );
 
   Future<void> _pickLeague(BuildContext context, AppState app) async {
     final s = context.strings;
@@ -285,7 +293,17 @@ class SettingsRow extends StatelessWidget {
               ),
             ),
             if (value != null) ...[
-              Text(value!, style: AppText.meta),
+              // Flexible as well as the label: on a 320pt screen a long value
+              // ("Premier League") would otherwise push the row over its width
+              // however far the label had already shrunk.
+              Flexible(
+                child: Text(
+                  value!,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppText.meta,
+                ),
+              ),
               const SizedBox(width: 8),
             ],
             trailing ??

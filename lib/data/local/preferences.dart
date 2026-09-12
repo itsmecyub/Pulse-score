@@ -17,6 +17,7 @@ class Preferences {
   static const _kPinnedTeams = 'pinned_team_ids';
   static const _kPinnedMatches = 'pinned_match_ids';
   static const _kPremium = 'premium_active';
+  static const _kReviewPrompt = 'has_shown_review_prompt';
 
   String? get languageCode => _prefs.getString(_kLanguage);
   Future<void> setLanguageCode(String code) =>
@@ -33,11 +34,17 @@ class Preferences {
   Future<void> setNotificationsEnabled(bool v) =>
       _prefs.setBool(_kNotificationsOn, v);
 
-  int get defaultLeagueId => _prefs.getInt(_kDefaultLeague) ?? 340;
+  int get defaultLeagueId => _prefs.getInt(_kDefaultLeague) ?? 39;
   Future<void> setDefaultLeagueId(int id) => _prefs.setInt(_kDefaultLeague, id);
 
   bool get isPremium => _prefs.getBool(_kPremium) ?? false;
   Future<void> setPremium(bool v) => _prefs.setBool(_kPremium, v);
+
+  /// Whether the App Store review prompt has already been offered on this
+  /// device. Set once, never cleared — the ask is a one-time thing.
+  bool get hasShownReviewPrompt => _prefs.getBool(_kReviewPrompt) ?? false;
+  Future<void> setHasShownReviewPrompt(bool v) =>
+      _prefs.setBool(_kReviewPrompt, v);
 
   Set<int> get pinnedTeamIds => _readIds(_kPinnedTeams);
   Future<void> setPinnedTeamIds(Set<int> ids) => _writeIds(_kPinnedTeams, ids);

@@ -1,0 +1,168 @@
+{
+  "lang": "tr",
+  "dir": "ltr",
+  "brand_tagline": "Canlı Futbol Skorları ve İstatistikler",
+  "updated_label": "Son güncelleme",
+  "updated": "6 Eylül 2026",
+  "lang_picker_label": "Başka bir dilde okuyun",
+  "docs": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "summary": "PulseScore'da hesap ve takip yoktur. Kişisel bilgi toplamıyor, saklamıyor ve satmıyoruz. Uygulamada yaptığınız ayarlar telefonunuzda kalır.",
+      "sections": [
+        {
+          "h": "Bu politikanın kapsamı",
+          "p": [
+            "Bu politika, iOS ve Android için PulseScore uygulaması ile bu sayfalar için geçerlidir. Uygulamanın bağlantı verdiği diğer siteleri kapsamaz; onların kendi politikaları vardır."
+          ]
+        },
+        {
+          "h": "Topladığımız bilgiler",
+          "p": [
+            "Sizi tanımlayan hiçbir bilgi yok. Hesap, kayıt, e-posta adresi ve isim yok. Analiz araçları, reklam kimlikleri veya üçüncü taraf takip SDK'ları kullanmıyoruz ve uygulamada reklam bulunmuyor."
+          ]
+        },
+        {
+          "h": "Uygulamanın cihazınızda sakladıkları",
+          "p": [
+            "Uygulamanın açılışlar arasında ayarlarınızı hatırlayabilmesi için, telefonunuzdaki kendi özel deposunda şunları saklar:"
+          ],
+          "ul": [
+            "seçtiğiniz dil",
+            "tanıtım ekranlarını tamamlayıp tamamlamadığınız",
+            "varsayılan liginiz",
+            "sabitlediğiniz takımlar ve maçlar",
+            "bildirim tercihiniz",
+            "Premium'un etkin olup olmadığı"
+          ]
+        },
+        {
+          "h": "Bunlar telefonunuzdan asla çıkmaz",
+          "p": [
+            "Bunların hiçbiri bize veya başka birine gönderilmez ve uygulamayı kaldırdığınızda tamamı silinir."
+          ]
+        },
+        {
+          "h": "Cihazınızdan gerçekten çıkanlar",
+          "p": [
+            "Canlı skorları göstermek için uygulama, futbol verilerini skor servisimizden, kulüp armalarını ise veri sağlayıcının görsel sunucusundan ister. Bu istekler yalnızca herhangi bir web isteğinin taşıdığı bilgileri taşır: IP adresi, zaman damgası ve genel cihaz ile işletim sistemi türü.",
+            "Bu bilgiler yanıtı iletmek ve hizmeti çalışır ve güvenli tutmak için kullanılır. Bunlara herhangi bir kimlik eklemiyor, sizin hakkınızda profil oluşturmak için kullanmıyor ve başka verilerle birleştirmiyoruz."
+          ]
+        },
+        {
+          "h": "Bildirimler",
+          "p": [
+            "Bildirimleri açma veya kapatma tercihiniz cihazınızda saklanır. Anlık bildirimler bu sürümde etkin değildir. İleride eklenirse, bir cihaz belirteci yalnızca istediğiniz maç uyarılarını iletmek için kullanılır ve istediğiniz zaman telefon ayarlarınızdan kapatabilirsiniz."
+          ]
+        },
+        {
+          "h": "Yararlandığımız hizmetler",
+          "p": [
+            "Uygulama ve bu sayfalar az sayıda üçüncü tarafa dayanır:"
+          ],
+          "ul": [
+            "API-Football (api-sports.io) — maç verileri, puan durumları ve kulüp armaları",
+            "Railway — uygulamanın bağlandığı skor servisinin barındırılması",
+            "Vercel — bu sayfaların barındırılması",
+            "BBC Sport — tarayıcınızda açılan haber bağlantısı"
+          ]
+        },
+        {
+          "h": "Onlarla hiçbir şey paylaşmıyoruz",
+          "p": [
+            "Bu sağlayıcıların hiçbiriyle kişisel bilgi paylaşmıyoruz, çünkü elimizde hiç yok. Haber bağlantısını açtığınızda uygulamadan çıkmış olursunuz ve o sitenin kendi gizlilik politikası geçerli olur."
+          ]
+        },
+        {
+          "h": "Çocuklar",
+          "p": [
+            "PulseScore 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlara ait bilgi toplamayız. Uygulama hiç kimseden kişisel bilgi toplamadığı için, bir çocuğa dair elimizde tutabileceğimiz bir şey de yoktur."
+          ]
+        },
+        {
+          "h": "Verileriniz üzerindeki denetiminiz",
+          "p": [
+            "Hiçbir şey kimliğinizle ilişkilendirilmediği için kapatılacak bir hesap ya da talep edilecek, düzeltilecek veya dışa aktarılacak kişisel veri yoktur — elimizde hiç bulunmuyor.",
+            "Dilinizi, varsayılan liginizi ve sabitlediğiniz takımları istediğiniz zaman Ayarlar'dan değiştirebilirsiniz; uygulamayı silmek ise cihazınızda sakladığı her şeyi kaldırır."
+          ]
+        },
+        {
+          "h": "Değişiklikler ve iletişim",
+          "p": [
+            "Bu politika değişirse sayfanın üst kısmındaki tarihi güncelleriz. Sorularınız için {{EMAIL}} adresine yazabilirsiniz."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Hizmet Şartları",
+      "summary": "PulseScore, yalnızca bilgilendirme amacıyla sunulan ücretsiz bir futbol skor uygulamasıdır. Veriler üçüncü taraf bir sağlayıcıdan gelir; gecikebilir veya hatalı olabilir — bahis ya da başka kararlar için asla bunlara güvenmeyin.",
+      "sections": [
+        {
+          "h": "Şartların kabulü",
+          "p": [
+            "PulseScore'u indirerek veya kullanarak bu şartları kabul etmiş olursunuz. Şartları kabul etmiyorsanız lütfen uygulamayı kullanmayın."
+          ]
+        },
+        {
+          "h": "PulseScore nedir",
+          "p": [
+            "PulseScore; fikstürleri, canlı skorları, maç olaylarını ve puan durumlarını bilgilendirme ve eğlence amacıyla gösteren bir mobil uygulamadır. İndirmesi ücretsizdir ve hesap gerektirmez."
+          ]
+        },
+        {
+          "h": "Bilgilerin doğruluğu",
+          "p": [
+            "Skorlar, başlama saatleri, puan durumları ve maç olayları üçüncü taraf bir veri sağlayıcıdan gelir. Gecikmeli, eksik, kesintili veya doğrudan hatalı olabilirler; maçlar önceden haber verilmeksizin ertelenebilir veya yeniden planlanabilir.",
+            "Uygulamadaki her şey yalnızca genel bilgi amacıyla sunulur. Bahis, finansal veya başka herhangi bir karar için buna dayanmayın — her zaman resmi bir kaynağı kontrol edin. Gösterilen verilere güvenmekten doğan zararlardan sorumlu değiliz."
+          ]
+        },
+        {
+          "h": "Uygulamayı nasıl kullanabilirsiniz",
+          "p": [
+            "PulseScore'u hukuka uygun ve makul biçimde kullanın. Özellikle şunları yapmayın:"
+          ],
+          "ul": [
+            "uygulamayı tersine mühendislikle çözmek, kaynak koda dönüştürmek veya değiştirmek",
+            "gösterilen verileri toplu olarak çekmek, kopyalamak veya yeniden satmak",
+            "hizmeti aksatmaya, aşırı yüklemeye ya da yetkisiz erişmeye çalışmak",
+            "uygulamayı hukuka aykırı herhangi bir amaçla kullanmak"
+          ]
+        },
+        {
+          "h": "Premium",
+          "p": [
+            "Uygulamada isteğe bağlı bir Premium katman bulunur. Bu sürümde ücretli abonelik satılmamaktadır ve Premium özellikler uygulamada ücretsiz olarak açılır.",
+            "İleride ücretli planlar sunulursa satın alma, yenileme ve iadeler Apple App Store veya Google Play tarafından kendi şartlarına göre yürütülür; fiyat ve faturalandırma dönemi satın almadan önce size gösterilir."
+          ]
+        },
+        {
+          "h": "Fikri mülkiyet",
+          "p": [
+            "Uygulamanın kendisi — tasarımı, kodu ve markası — bize aittir. Kulüp armaları, lig logoları, turnuva ve takım adları ilgili sahiplerine aittir ve yalnızca uygulamadaki turnuva ve kulüpleri tanıtmak için gösterilir. Bunlar üzerinde mülkiyet iddia etmiyoruz; hiçbir kulüp, lig veya federasyonla bağlantılı değiliz, onlar tarafından onaylanmış veya desteklenmiş de değiliz."
+          ]
+        },
+        {
+          "h": "Diğer sitelere bağlantılar",
+          "p": [
+            "Uygulama, futbol haberleri gibi üçüncü taraf içeriklere bağlantı verir. Bu siteleri denetlemiyoruz; içerikleri, doğrulukları veya gizlilik uygulamaları için sorumluluk taşımıyoruz."
+          ]
+        },
+        {
+          "h": "Garanti verilmemesi ve sorumluluk sınırları",
+          "p": [
+            "PulseScore \"olduğu gibi\" ve \"mevcut haliyle\" sunulur; hiçbir türde garanti verilmez. Kesintisiz veya hatasız çalışacağını, verilerin doğru ya da eksiksiz olacağını taahhüt etmiyoruz.",
+            "Yasaların izin verdiği azami ölçüde; dolaylı, arızi veya sonuç niteliğindeki zararlardan, kâr ya da fırsat kaybından, hizmet kesintilerinden veya veri hatalarından doğan zararlardan sorumlu değiliz."
+          ]
+        },
+        {
+          "h": "Değişiklikler ve hizmetin sonlandırılması",
+          "p": [
+            "Uygulamayı ve bu şartları zaman zaman güncelleyebiliriz; bir değişiklikten sonra uygulamayı kullanmaya devam etmeniz güncel şartları kabul ettiğiniz anlamına gelir. Hizmeti veya herhangi bir bölümünü istediğimiz zaman askıya alabilir ya da sonlandırabiliriz.",
+            "Bu şartlar, geliştiricinin yerleşik olduğu ülkede geçerli hukuka tabidir; kanunlar ihtilafı kuralları uygulanmaz. Şartlarla ilgili sorularınızı {{EMAIL}} adresine gönderebilirsiniz."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -16,6 +16,7 @@ class AppState extends ChangeNotifier {
         _notificationsEnabled = _prefs.notificationsEnabled,
         _defaultLeagueId = _prefs.defaultLeagueId,
         _isPremium = _prefs.isPremium,
+        _hasShownReviewPrompt = _prefs.hasShownReviewPrompt,
         _pinnedTeamIds = _prefs.pinnedTeamIds,
         _pinnedMatchIds = _prefs.pinnedMatchIds;
 
@@ -28,6 +29,7 @@ class AppState extends ChangeNotifier {
   bool _notificationsEnabled;
   int _defaultLeagueId;
   bool _isPremium;
+  bool _hasShownReviewPrompt;
   Set<int> _pinnedTeamIds;
   Set<int> _pinnedMatchIds;
 
@@ -36,13 +38,22 @@ class AppState extends ChangeNotifier {
   bool get onboardingComplete => _onboardingComplete;
   bool get notificationsAsked => _notificationsAsked;
   bool get notificationsEnabled => _notificationsEnabled;
-  int get defaultLeagueId => _defaultLeagueId;
+  /// Always a league that is actually in the catalog. An install from an
+  /// earlier build can hold an id that has since been dropped (V-League was
+  /// removed), and every screen would otherwise select a chip that isn't there
+  /// and query a league we no longer promote.
+  int get defaultLeagueId => LeagueCatalog.contains(_defaultLeagueId)
+      ? _defaultLeagueId
+      : LeagueCatalog.defaultLeague.id;
   bool get isPremium => _isPremium;
+
+  /// True once the review prompt has been offered on this device.
+  bool get hasShownReviewPrompt => _hasShownReviewPrompt;
   Set<int> get pinnedTeamIds => _pinnedTeamIds;
   Set<int> get pinnedMatchIds => _pinnedMatchIds;
 
   CatalogLeague get defaultLeague =>
-      LeagueCatalog.byId(_defaultLeagueId) ?? LeagueCatalog.defaultLeague;
+      LeagueCatalog.byId(defaultLeagueId) ?? LeagueCatalog.defaultLeague;
 
   /// Free users get the padlocked leagues blocked; premium unlocks everything.
   bool canAccess(CatalogLeague league) => _isPremium || !league.premium;
@@ -84,6 +95,19 @@ class AppState extends ChangeNotifier {
     _defaultLeagueId = leagueId;
     notifyListeners();
     await _prefs.setDefaultLeagueId(leagueId);
+  }
+
+  /// Records that the review prompt has been offered, so it never returns.
+  ///
+  /// Called as soon as the request is made rather than on any outcome: iOS
+  /// decides for itself whether to actually draw the dialog, and asking again
+  /// on the next launch because it declined would be exactly the nagging the
+  /// one-time rule exists to prevent.
+  Future<void> markReviewPromptShown() async {
+    if (_hasShownReviewPrompt) return;
+    _hasShownReviewPrompt = true;
+    notifyListeners();
+    await _prefs.setHasShownReviewPrompt(true);
   }
 
   Future<void> setPremium(bool value) async {

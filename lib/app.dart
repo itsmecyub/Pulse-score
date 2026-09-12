@@ -3,12 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
+import 'ads/ads_boot.dart';
+import 'ads/app_lifecycle_observer.dart';
 import 'core/theme/app_theme.dart';
 import 'data/local/preferences.dart';
 import 'data/repositories/football_repository.dart';
 import 'features/language/language_screen.dart';
 import 'features/onboarding/onboarding_screen.dart';
 import 'features/permissions/notification_screen.dart';
+import 'features/review/review_prompt_host.dart';
 import 'features/shell/home_shell.dart';
 import 'features/splash/splash_screen.dart';
 import 'l10n/app_locales.dart';
@@ -16,9 +19,17 @@ import 'state/app_state.dart';
 import 'state/matches_state.dart';
 
 class PulseScoreApp extends StatelessWidget {
-  const PulseScoreApp({super.key, required this.preferences});
+  const PulseScoreApp({
+    super.key,
+    required this.preferences,
+    this.repository,
+  });
 
   final Preferences preferences;
+
+  /// Injectable so tests can drive the whole app from recorded payloads
+  /// instead of the network. Production leaves it null.
+  final FootballRepository? repository;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +37,7 @@ class PulseScoreApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => AppState(preferences)),
         Provider<FootballRepository>(
-          create: (_) => FootballRepository(),
+          create: (_) => repository ?? FootballRepository(),
           dispose: (_, repo) => repo.dispose(),
         ),
         ChangeNotifierProxyProvider<FootballRepository, MatchesState>(
@@ -86,6 +97,12 @@ class _SplashGate extends StatefulWidget {
   /// Long enough for the mark to register, short enough not to feel like a wait.
   static const _dwell = Duration(milliseconds: 1700);
   static const _maxWait = Duration(seconds: 5);
+
+  /// The logo also holds for the ads module, so the app-open ad lands on the
+  /// first screen rather than interrupting someone already reading scores.
+  /// Measured from the start of boot, and generous enough to cover a cold SDK
+  /// start without ever parking the user on a logo.
+  static const _adsDeadline = Duration(seconds: 10);
   static const _fade = Duration(milliseconds: 450);
 
   @override
@@ -94,6 +111,7 @@ class _SplashGate extends StatefulWidget {
 
 class _SplashGateState extends State<_SplashGate> {
   bool _ready = false;
+  final _lifecycle = AppLifecycleObserver();
 
   @override
   void initState() {
@@ -106,6 +124,11 @@ class _SplashGateState extends State<_SplashGate> {
 
   Future<void> _boot() async {
     final matches = context.read<MatchesState>();
+    final startedAt = DateTime.now();
+
+    // Started here rather than awaited with the rest: the scores should never
+    // be held up by an ad request, but the ad gets the leftover budget below.
+    final ads = bootAds();
 
     await Future.wait([
       Future<void>.delayed(_SplashGate._dwell),
@@ -114,7 +137,19 @@ class _SplashGateState extends State<_SplashGate> {
       matches.load().catchError((_) {}),
     ]).timeout(_SplashGate._maxWait, onTimeout: () => const []);
 
+    final left = _SplashGate._adsDeadline - DateTime.now().difference(startedAt);
+    if (left > Duration.zero) {
+      await ads.timeout(left, onTimeout: () {});
+    }
+
+    _lifecycle.initialize();
     if (mounted) setState(() => _ready = true);
+  }
+
+  @override
+  void dispose() {
+    _lifecycle.dispose();
+    super.dispose();
   }
 
   @override
@@ -168,6 +203,8 @@ class _RootRouter extends StatelessWidget {
       );
     }
 
-    return const HomeShell();
+    // Both wrappers live only on this branch, so neither the app-open ad nor
+    // the review ask can fire during the splash or the first-run flow.
+    return const ReviewPromptHost(child: HomeShell());
   }
 }

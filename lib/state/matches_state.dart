@@ -26,6 +26,8 @@ class MatchesState extends ChangeNotifier {
   String? _notice;
   bool _isDemo = false;
   DateTime? _lastUpdated;
+  DateTime? _backendLastUpdated;
+  bool _backendHasNoData = false;
 
   LoadStatus get status => _status;
   List<Fixture> get live => _live;
@@ -33,6 +35,13 @@ class MatchesState extends ChangeNotifier {
   String? get notice => _notice;
   bool get isDemo => _isDemo;
   DateTime? get lastUpdated => _lastUpdated;
+
+  /// When the backend itself last refreshed from upstream — more meaningful to
+  /// show than when this app last asked.
+  DateTime? get backendLastUpdated => _backendLastUpdated;
+
+  /// The backend replied but is serving nothing at all.
+  bool get backendHasNoData => _backendHasNoData;
   bool get isFirstLoad => _status == LoadStatus.loading && _live.isEmpty;
 
   /// Live matches whose home or away side the user follows.
@@ -44,14 +53,14 @@ class MatchesState extends ChangeNotifier {
               pinnedTeamIds.contains(f.away.id))
           .toList();
 
-  Future<void> load({bool silent = false}) async {
+  Future<void> load({bool silent = false, bool force = false}) async {
     if (!silent) {
       _status = LoadStatus.loading;
       _safeNotify();
     }
 
-    final liveResult = await _repo.liveFixtures();
-    final featuredResult = await _repo.upcomingFeatured();
+    final liveResult = await _repo.liveFixtures(force: force);
+    final featuredResult = await _repo.upcomingFeatured(force: force);
 
     if (_disposed) return;
 
@@ -60,14 +69,18 @@ class MatchesState extends ChangeNotifier {
     _featured = featuredResult.data;
     _isDemo = liveResult.isDemo;
     _notice = liveResult.notice ?? featuredResult.notice;
+    _backendLastUpdated = _repo.lastUpdated;
+    _backendHasNoData = _repo.backendHasNoData;
     _status = LoadStatus.ready;
     _lastUpdated = DateTime.now();
     _safeNotify();
   }
 
+  /// Pull-to-refresh and the refresh button: always go back to the network,
+  /// never serve what is already cached.
   Future<void> refresh() async {
     _repo.clearCache();
-    await load(silent: true);
+    await load(silent: true, force: true);
   }
 
   void startPolling() {

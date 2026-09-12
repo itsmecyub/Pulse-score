@@ -1,0 +1,111 @@
+{
+ "lang": "vi",
+ "dir": "ltr",
+ "brand_tagline": "Tỷ số và thống kê bóng đá trực tiếp",
+ "updated_label": "Cập nhật lần cuối",
+ "updated": "6 tháng 9 năm 2026",
+ "lang_picker_label": "Đọc bằng ngôn ngữ khác",
+ "docs": {
+  "privacy": {
+   "title": "Chính sách bảo mật",
+   "summary": "PulseScore không có tài khoản và không theo dõi. Chúng tôi không thu thập, lưu trữ hay bán thông tin cá nhân.",
+   "sections": [
+    {
+     "h": "Chúng tôi thu thập gì",
+     "p": [
+      "Không gì nhận dạng bạn. Không tài khoản, không đăng ký, không email, không tên. Chúng tôi không dùng công cụ phân tích, mã quảng cáo hay theo dõi của bên thứ ba, và ứng dụng không có quảng cáo."
+     ]
+    },
+    {
+     "h": "Những gì ở lại trên máy bạn",
+     "p": [
+      "Ứng dụng lưu thiết lập của bạn trong bộ nhớ riêng trên điện thoại:"
+     ],
+     "ul": [
+      "ngôn ngữ đã chọn",
+      "đã xem xong phần giới thiệu hay chưa",
+      "giải đấu mặc định",
+      "đội và trận đã ghim",
+      "lựa chọn thông báo",
+      "Premium có đang bật hay không"
+     ],
+     "p2": [
+      "Không dữ liệu nào được gửi đi đâu cả, và tất cả bị xóa khi bạn gỡ ứng dụng."
+     ]
+    },
+    {
+     "h": "Những gì rời khỏi máy bạn",
+     "p": [
+      "Để hiển thị tỷ số, ứng dụng yêu cầu dữ liệu từ dịch vụ tỷ số của chúng tôi và logo câu lạc bộ từ máy chủ hình ảnh của nhà cung cấp. Các yêu cầu đó chỉ mang theo những gì mọi yêu cầu web đều mang: địa chỉ IP, thời điểm và loại thiết bị nói chung, dùng để trả kết quả và giữ dịch vụ an toàn. Chúng tôi không gắn mã nhận dạng và không dựng hồ sơ người dùng."
+     ]
+    },
+    {
+     "h": "Thông báo",
+     "p": [
+      "Lựa chọn của bạn được lưu trên máy. Thông báo đẩy chưa bật ở phiên bản này. Nếu được thêm, mã thiết bị chỉ dùng để gửi cảnh báo trận đấu bạn yêu cầu, và bạn có thể tắt trong cài đặt điện thoại."
+     ]
+    },
+    {
+     "h": "Dịch vụ chúng tôi dùng",
+     "p": [
+      "API-Football cho dữ liệu và logo, Railway cho dịch vụ tỷ số, Vercel cho các trang này, và BBC Sport cho liên kết tin tức, mở trong trình duyệt của bạn theo chính sách riêng của họ. Chúng tôi không chia sẻ thông tin cá nhân với họ, vì chúng tôi không có."
+     ]
+    },
+    {
+     "h": "Trẻ em, quyền kiểm soát và liên hệ",
+     "p": [
+      "PulseScore không hướng đến trẻ dưới 13 tuổi và không cố ý thu thập gì từ các em. Vì không gì gắn với danh tính của bạn, không có tài khoản để đóng và không có dữ liệu để yêu cầu hay xuất. Xóa ứng dụng sẽ xóa mọi thứ đã lưu. Nếu chính sách thay đổi, chúng tôi cập nhật ngày ở trên. Liên hệ: {{EMAIL}}."
+     ]
+    }
+   ]
+  },
+  "terms": {
+   "title": "Điều khoản dịch vụ",
+   "summary": "PulseScore là ứng dụng tỷ số miễn phí, chỉ nhằm cung cấp thông tin. Dữ liệu có thể chậm hoặc sai — đừng dựa vào đó để cá cược hay ra quyết định.",
+   "sections": [
+    {
+     "h": "Sử dụng ứng dụng",
+     "p": [
+      "Khi tải hoặc dùng PulseScore, bạn chấp nhận các điều khoản này; nếu không, vui lòng đừng dùng. Ứng dụng hiển thị lịch thi đấu, tỷ số trực tiếp, diễn biến và bảng xếp hạng nhằm mục đích thông tin và giải trí, miễn phí và không cần tài khoản."
+     ]
+    },
+    {
+     "h": "Độ chính xác",
+     "p": [
+      "Tỷ số, giờ thi đấu, bảng xếp hạng và diễn biến đến từ nhà cung cấp bên thứ ba, có thể chậm, thiếu hoặc sai; trận đấu có thể hoãn mà không báo trước. Mọi thứ chỉ là thông tin chung: đừng dùng cho cá cược hay quyết định tài chính và các quyết định khác, hãy luôn kiểm tra nguồn chính thức. Chúng tôi không chịu trách nhiệm cho thiệt hại phát sinh."
+     ]
+    },
+    {
+     "h": "Những điều không được làm",
+     "p": [
+      "Hãy dùng ứng dụng hợp pháp. Không được:"
+     ],
+     "ul": [
+      "dịch ngược, phân tách hoặc chỉnh sửa",
+      "thu thập hàng loạt, sao chép hoặc bán lại dữ liệu",
+      "gây gián đoạn, quá tải hoặc truy cập trái phép",
+      "dùng cho mục đích bất hợp pháp"
+     ]
+    },
+    {
+     "h": "Premium",
+     "p": [
+      "Ứng dụng có gói Premium tùy chọn. Phiên bản này không bán thuê bao trả phí và Premium được mở miễn phí. Nếu có gói trả phí, App Store hoặc Google Play sẽ xử lý mua và hoàn tiền theo điều khoản của họ, và giá sẽ hiển thị trước khi bạn mua."
+     ]
+    },
+    {
+     "h": "Sở hữu và trang bên ngoài",
+     "p": [
+      "Ứng dụng, thiết kế và mã nguồn thuộc về chúng tôi. Logo câu lạc bộ, logo giải và tên giải, tên đội thuộc về chủ sở hữu và chỉ hiển thị để nhận diện; chúng tôi không tuyên bố sở hữu và không liên kết hay được chứng thực bởi bất kỳ câu lạc bộ, giải đấu hay tổ chức nào. Liên kết tới nội dung bên thứ ba, như tin tức, nằm ngoài tầm kiểm soát của chúng tôi."
+     ]
+    },
+    {
+     "h": "Không bảo đảm, thay đổi và liên hệ",
+     "p": [
+      "Ứng dụng được cung cấp \"nguyên trạng\" và \"tùy theo khả năng sẵn có\", không bảo đảm. Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm về thiệt hại gián tiếp hay hệ quả, cũng như gián đoạn và sai lệch dữ liệu. Chúng tôi có thể cập nhật ứng dụng và điều khoản; tiếp tục dùng là chấp nhận, và chúng tôi có thể tạm dừng hoặc ngừng dịch vụ. Điều khoản này theo pháp luật nơi nhà phát triển đặt trụ sở. Liên hệ: {{EMAIL}}."
+     ]
+    }
+   ]
+  }
+ }
+}

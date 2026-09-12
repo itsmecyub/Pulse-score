@@ -1,0 +1,111 @@
+{
+ "lang": "tr",
+ "dir": "ltr",
+ "brand_tagline": "Canlı Futbol Skorları ve İstatistikler",
+ "updated_label": "Son güncelleme",
+ "updated": "6 Eylül 2026",
+ "lang_picker_label": "Başka bir dilde okuyun",
+ "docs": {
+  "privacy": {
+   "title": "Gizlilik Politikası",
+   "summary": "PulseScore'da hesap ve takip yoktur. Kişisel bilgi toplamıyor, saklamıyor ve satmıyoruz.",
+   "sections": [
+    {
+     "h": "Ne topluyoruz",
+     "p": [
+      "Sizi tanımlayan hiçbir şey. Hesap, kayıt, e-posta ve isim yok. Analiz araçları, reklam kimlikleri veya üçüncü taraf takibi kullanmıyoruz ve uygulamada reklam yok."
+     ]
+    },
+    {
+     "h": "Cihazınızda kalanlar",
+     "p": [
+      "Uygulama, ayarlarınızı telefonunuzdaki kendi özel deposunda saklar:"
+     ],
+     "ul": [
+      "seçilen dil",
+      "tanıtımın tamamlanıp tamamlanmadığı",
+      "varsayılan lig",
+      "sabitlenen takımlar ve maçlar",
+      "bildirim tercihi",
+      "Premium'un etkin olup olmadığı"
+     ],
+     "p2": [
+      "Bunların hiçbiri hiçbir yere gönderilmez ve uygulamayı kaldırdığınızda silinir."
+     ]
+    },
+    {
+     "h": "Cihazınızdan çıkanlar",
+     "p": [
+      "Skorları göstermek için uygulama, verileri skor servisimizden ve kulüp armalarını sağlayıcının görsel sunucusundan ister. Bu istekler yalnızca her web isteğinin taşıdığını taşır: IP adresi, zaman damgası ve genel cihaz türü; yanıtı iletmek ve hizmeti güvende tutmak için kullanılır. Kimlik eklemiyor, profil oluşturmuyoruz."
+     ]
+    },
+    {
+     "h": "Bildirimler",
+     "p": [
+      "Tercihiniz cihazınızda saklanır. Anlık bildirimler bu sürümde etkin değildir. Eklenirse, cihaz belirteci yalnızca istediğiniz maç uyarılarını iletmek için kullanılır ve telefon ayarlarından kapatabilirsiniz."
+     ]
+    },
+    {
+     "h": "Kullandığımız hizmetler",
+     "p": [
+      "Veriler ve armalar için API-Football, skor servisi için Railway, bu sayfalar için Vercel ve haber bağlantısı için BBC Sport — tarayıcınızda kendi politikasıyla açılır. Onlarla kişisel bilgi paylaşmıyoruz, çünkü hiç yok."
+     ]
+    },
+    {
+     "h": "Çocuklar, denetim ve iletişim",
+     "p": [
+      "PulseScore 13 yaş altına yönelik değildir ve onlardan bilerek hiçbir şey toplamaz. Hiçbir şey kimliğinizle ilişkili olmadığı için kapatılacak hesap, talep edilecek veya dışa aktarılacak veri yoktur. Uygulamayı silmek sakladığı her şeyi kaldırır. Politika değişirse yukarıdaki tarihi güncelleriz. Sorular: {{EMAIL}}."
+     ]
+    }
+   ]
+  },
+  "terms": {
+   "title": "Hizmet Şartları",
+   "summary": "PulseScore yalnızca bilgilendirme amaçlı, ücretsiz bir skor uygulamasıdır. Veriler gecikebilir veya hatalı olabilir — bahis ya da başka kararlar için güvenmeyin.",
+   "sections": [
+    {
+     "h": "Uygulamanın kullanımı",
+     "p": [
+      "PulseScore'u indirerek veya kullanarak bu şartları kabul edersiniz; kabul etmiyorsanız lütfen kullanmayın. Uygulama fikstür, canlı skor, maç olayları ve puan durumlarını bilgilendirme ve eğlence amacıyla gösterir; ücretsizdir ve hesap gerektirmez."
+     ]
+    },
+    {
+     "h": "Doğruluk",
+     "p": [
+      "Skorlar, başlama saatleri, puan durumları ve olaylar üçüncü taraf bir sağlayıcıdan gelir; gecikmeli, eksik veya hatalı olabilir ve maçlar habersiz ertelenebilir. Hepsi genel bilgidir: bahis, finansal veya başka kararlar için kullanmayın ve daima resmi bir kaynağı kontrol edin. Buna güvenmekten doğan zararlardan sorumlu değiliz."
+     ]
+    },
+    {
+     "h": "Yapılmaması gerekenler",
+     "p": [
+      "Uygulamayı hukuka uygun kullanın. Şunları yapmayın:"
+     ],
+     "ul": [
+      "tersine mühendislik, kaynak koda dönüştürme veya değiştirme",
+      "verileri toplu çekme, kopyalama veya yeniden satma",
+      "hizmeti aksatma, aşırı yükleme veya yetkisiz erişim",
+      "hukuka aykırı herhangi bir kullanım"
+     ]
+    },
+    {
+     "h": "Premium",
+     "p": [
+      "Uygulamada isteğe bağlı bir Premium katman vardır. Bu sürümde ücretli abonelik satılmaz ve Premium ücretsiz açılır. Ücretli planlar eklenirse satın alma ve iadeleri App Store veya Google Play kendi şartlarına göre yürütür ve fiyat satın almadan önce gösterilir."
+     ]
+    },
+    {
+     "h": "Mülkiyet ve diğer siteler",
+     "p": [
+      "Uygulama, tasarımı ve kodu bize aittir. Kulüp armaları, lig logoları ile turnuva ve takım adları sahiplerine aittir ve yalnızca tanıtım amacıyla gösterilir; mülkiyet iddia etmiyoruz ve hiçbir kulüp, lig veya federasyonla bağlantılı ya da onlarca onaylanmış değiliz. Haber gibi üçüncü taraf içeriklere verilen bağlantılar denetimimiz dışındadır."
+     ]
+    },
+    {
+     "h": "Garanti yok, değişiklikler ve iletişim",
+     "p": [
+      "Uygulama \"olduğu gibi\" ve \"mevcut haliyle\", garantisiz sunulur. Yasaların izin verdiği ölçüde dolaylı veya sonuç niteliğindeki zararlardan, kesintilerden ve veri hatalarından sorumlu değiliz. Uygulamayı ve şartları güncelleyebiliriz; kullanmaya devam etmek kabul anlamına gelir ve hizmeti askıya alabilir ya da sonlandırabiliriz. Bu şartlar, geliştiricinin yerleşik olduğu ülkenin hukukuna tabidir. Sorular: {{EMAIL}}."
+     ]
+    }
+   ]
+  }
+ }
+}

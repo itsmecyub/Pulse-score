@@ -197,9 +197,15 @@ class _LeagueCard extends StatelessWidget {
                           style: const TextStyle(fontSize: 12),
                         ),
                         const SizedBox(width: 5),
-                        Text(
-                          league.code,
-                          style: AppText.metaSmall.copyWith(fontSize: 12),
+                        // Flexible, so the longest codes ellipsize on a 320pt
+                        // screen instead of overflowing the card.
+                        Flexible(
+                          child: Text(
+                            league.code,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppText.metaSmall.copyWith(fontSize: 12),
+                          ),
                         ),
                       ],
                     ),

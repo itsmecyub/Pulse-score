@@ -1,0 +1,111 @@
+{
+ "lang": "id",
+ "dir": "ltr",
+ "brand_tagline": "Skor & Statistik Sepak Bola Langsung",
+ "updated_label": "Terakhir diperbarui",
+ "updated": "6 September 2026",
+ "lang_picker_label": "Baca dalam bahasa lain",
+ "docs": {
+  "privacy": {
+   "title": "Kebijakan Privasi",
+   "summary": "PulseScore tidak memiliki akun dan tidak melacak. Kami tidak mengumpulkan, menyimpan, atau menjual informasi pribadi.",
+   "sections": [
+    {
+     "h": "Apa yang kami kumpulkan",
+     "p": [
+      "Tidak ada yang mengidentifikasi Anda. Tanpa akun, tanpa pendaftaran, tanpa email, tanpa nama. Kami tidak memakai analitik, pengenal iklan, atau pelacakan pihak ketiga, dan aplikasi ini tanpa iklan."
+     ]
+    },
+    {
+     "h": "Yang tetap di perangkat Anda",
+     "p": [
+      "Aplikasi menyimpan pengaturan Anda di penyimpanan pribadinya, di ponsel Anda:"
+     ],
+     "ul": [
+      "bahasa yang dipilih",
+      "apakah pengenalan sudah selesai",
+      "liga bawaan",
+      "tim dan pertandingan yang disematkan",
+      "preferensi notifikasi",
+      "apakah Premium aktif"
+     ],
+     "p2": [
+      "Tidak ada yang dikirim ke mana pun, dan semuanya terhapus saat Anda mencopot aplikasi."
+     ]
+    },
+    {
+     "h": "Yang keluar dari perangkat Anda",
+     "p": [
+      "Untuk menampilkan skor, aplikasi meminta data ke layanan skor kami dan lambang klub ke server gambar penyedia. Permintaan itu hanya membawa apa yang dibawa permintaan web biasa: alamat IP, waktu, dan jenis perangkat secara umum, dipakai untuk mengirim respons dan menjaga layanan tetap aman. Kami tidak melampirkan pengenal dan tidak menyusun profil."
+     ]
+    },
+    {
+     "h": "Notifikasi",
+     "p": [
+      "Pilihan Anda tersimpan di perangkat. Notifikasi push belum aktif di rilis ini. Jika ditambahkan, token perangkat hanya dipakai untuk mengirim peringatan pertandingan yang Anda minta, dan bisa dimatikan di pengaturan ponsel."
+     ]
+    },
+    {
+     "h": "Layanan yang kami pakai",
+     "p": [
+      "API-Football untuk data dan lambang, Railway untuk layanan skor, Vercel untuk halaman ini, dan BBC Sport untuk tautan berita, yang terbuka di peramban Anda dengan kebijakannya sendiri. Kami tidak membagikan informasi pribadi kepada mereka, karena kami tidak memilikinya."
+     ]
+    },
+    {
+     "h": "Anak-anak, kendali, dan kontak",
+     "p": [
+      "PulseScore tidak ditujukan untuk anak di bawah 13 tahun dan tidak sengaja mengumpulkan apa pun dari mereka. Karena tidak ada yang terkait identitas Anda, tidak ada akun untuk ditutup dan tidak ada data untuk diminta atau diekspor. Menghapus aplikasi menghapus semua yang tersimpan. Jika kebijakan berubah, kami perbarui tanggal di atas. Pertanyaan: {{EMAIL}}."
+     ]
+    }
+   ]
+  },
+  "terms": {
+   "title": "Ketentuan Layanan",
+   "summary": "PulseScore adalah aplikasi skor gratis yang disediakan hanya untuk informasi. Data bisa tertunda atau keliru — jangan jadikan dasar taruhan atau keputusan lain.",
+   "sections": [
+    {
+     "h": "Menggunakan aplikasi",
+     "p": [
+      "Dengan mengunduh atau memakai PulseScore Anda menerima ketentuan ini; jika tidak, mohon jangan gunakan. Aplikasi menampilkan jadwal, skor langsung, kejadian pertandingan, dan klasemen untuk informasi dan hiburan, gratis, dan tanpa akun."
+     ]
+    },
+    {
+     "h": "Keakuratan",
+     "p": [
+      "Skor, waktu kickoff, klasemen, dan kejadian berasal dari penyedia pihak ketiga dan bisa tertunda, tidak lengkap, atau keliru; pertandingan dapat ditunda tanpa pemberitahuan. Semuanya hanya informasi umum: jangan dipakai untuk taruhan atau keputusan keuangan dan lainnya, dan selalu periksa sumber resmi. Kami tidak bertanggung jawab atas kerugian yang timbul."
+     ]
+    },
+    {
+     "h": "Yang tidak boleh dilakukan",
+     "p": [
+      "Gunakan aplikasi secara sah. Jangan:"
+     ],
+     "ul": [
+      "merekayasa balik, mendekompilasi, atau memodifikasi",
+      "mengambil massal, menyalin, atau menjual ulang data",
+      "mengganggu, membebani, atau mengakses layanan tanpa izin",
+      "memakainya untuk hal yang melanggar hukum"
+     ]
+    },
+    {
+     "h": "Premium",
+     "p": [
+      "Aplikasi punya tingkat Premium opsional. Pada rilis ini tidak ada langganan berbayar dan Premium dibuka gratis. Jika paket berbayar ditambahkan, App Store atau Google Play menangani pembelian dan pengembalian dana menurut ketentuan mereka, dan harga ditampilkan sebelum Anda membeli."
+     ]
+    },
+    {
+     "h": "Kepemilikan dan situs lain",
+     "p": [
+      "Aplikasi, desain, dan kodenya milik kami. Lambang klub, logo liga, serta nama kompetisi dan tim milik pemiliknya dan hanya ditampilkan untuk identifikasi; kami tidak mengklaim kepemilikan dan tidak berafiliasi atau didukung oleh klub, liga, maupun badan pengatur mana pun. Tautan ke konten pihak ketiga, seperti berita, di luar kendali kami."
+     ]
+    },
+    {
+     "h": "Tanpa jaminan, perubahan, dan kontak",
+     "p": [
+      "Aplikasi disediakan \"sebagaimana adanya\" dan \"sebagaimana tersedia\", tanpa jaminan. Sejauh diizinkan hukum, kami tidak bertanggung jawab atas kerugian tidak langsung atau konsekuensial, maupun gangguan dan ketidakakuratan data. Kami dapat memperbarui aplikasi dan ketentuan ini; penggunaan berkelanjutan berarti menerima, dan kami dapat menangguhkan atau menghentikan layanan. Ketentuan ini mengikuti hukum negara tempat pengembang berkedudukan. Pertanyaan: {{EMAIL}}."
+     ]
+    }
+   ]
+  }
+ }
+}
