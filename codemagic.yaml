@@ -6,14 +6,15 @@ workflows:
     environment:
       flutter: stable
       ios_signing:
-        # Must match PRODUCT_BUNDLE_IDENTIFIER in ios/Runner.xcodeproj, or
-        # `xcode-project use-profiles` installs a profile the Runner target
-        # never matches and the archive falls back to automatic signing.
+        # Let the App Store Connect integration fetch (or create) the
+        # distribution certificate and profile for this exact bundle id.
+        #
+        # The manually uploaded "Pulsescore" profile was issued for a different
+        # App ID, so `use-profiles` matched nothing against the Runner target,
+        # left it on automatic signing, and the archive then looked for a
+        # development profile that does not exist on the build machine.
+        distribution_type: app_store
         bundle_identifier: com.pulsescore.pulseScore
-        provisioning_profiles:
-          - Pulsescore
-        certificates:
-          - Certificate1
     scripts:
       # Before use-profiles: the generated xcconfig has to exist first.
       - name: Get Flutter packages
