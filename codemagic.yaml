@@ -6,14 +6,16 @@ workflows:
     environment:
       flutter: stable
       ios_signing:
-        bundle_identifier: com.pulsescoreplus
+        # Must match PRODUCT_BUNDLE_IDENTIFIER in ios/Runner.xcodeproj, or
+        # `xcode-project use-profiles` installs a profile the Runner target
+        # never matches and the archive falls back to automatic signing.
+        bundle_identifier: com.pulsescore.pulseScore
         provisioning_profiles:
           - Pulsescore
         certificates:
           - Certificate1
     scripts:
-      - name: Set up code signing settings on Xcode project
-        script: xcode-project use-profiles
+      # Before use-profiles: the generated xcconfig has to exist first.
       - name: Get Flutter packages
         script: flutter packages pub get
       - name: Set up code signing
