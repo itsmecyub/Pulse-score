@@ -1,0 +1,33 @@
+workflows:
+  testFlight:
+    name: LUKE
+    integrations:
+      app_store_connect: LUKE THOMPSON
+    environment:
+      flutter: stable
+      ios_signing:
+        bundle_identifier: com.pulsescoreplus
+        provisioning_profiles:
+          - Pulsescore
+        certificates:
+          - Certificate1
+    scripts:
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Set up code signing
+        script: xcode-project use-profiles
+      - name: Build IPA
+        script: flutter build ipa --release --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      email:
+        recipients:
+          - lukethompso66@icloud.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
