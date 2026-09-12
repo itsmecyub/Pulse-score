@@ -14,7 +14,7 @@ workflows:
         # left it on automatic signing, and the archive then looked for a
         # development profile that does not exist on the build machine.
         distribution_type: app_store
-        bundle_identifier: com.pulsescore.pulseScore
+        bundle_identifier: com.pulsescoreplus
     scripts:
       # Before use-profiles: the generated xcconfig has to exist first.
       - name: Get Flutter packages
